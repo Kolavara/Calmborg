@@ -89,6 +89,7 @@ export interface ProductCategory {
   title: string;
   subtitle: string;
   description: string;
+  brand?: string;
   products: string[];
   productItems?: ProductItem[];
   applications?: string[];
@@ -107,6 +108,8 @@ export const productCategories: ProductCategory[] = [
     title: "Solid Carbide End Mills",
     subtitle: "Union Tool Japan precision end mills",
     description: "Premium solid carbide cutting tools from Union Tool Japan, engineered for maximum precision, extended tool life, and superior surface finish across all machining applications.",
+    brand: "Union Tool",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/Union-tool-end-mills-orion-group.jpeg",
     productItems: [
       {
         name: "AZS & DLC-AZS 3-Flute Square End Mills",
@@ -404,6 +407,8 @@ export const productCategories: ProductCategory[] = [
     title: "Tool Holders",
     subtitle: "Showa & MST precision tool holders",
     description: "Precision tool holding systems from Showa and MST (Japan) for maximum runout accuracy, rigidity, and machining performance.",
+    brand: "Showa & MST",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/show-tools-holders-orion-group.jpg",
     productItems: [
       {
         name: "BT Tool Holders (Showa)",
@@ -536,6 +541,8 @@ export const productCategories: ProductCategory[] = [
     title: "HSS & Carbide Taps",
     subtitle: "Yamawa (Japan) premium tapping solutions",
     description: "Complete range of high-performance taps from Yamawa Japan for precision thread cutting in all materials including stainless steel and hardened metals.",
+    brand: "Yamawa",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/HSS-Carbide-Taps-–Yamawa.jpg",
     productItems: [
       {
         name: "SU+SP Spiral Point Taps for Stainless Steel (SUS)",
@@ -655,6 +662,8 @@ export const productCategories: ProductCategory[] = [
     title: "Inserts for Die Mold",
     subtitle: "Aura precision inserts for die and mold applications",
     description: "Specialized tooling solutions for die and mold making, including precision inserts from Aura Germany for hardened steel machining and complex contouring.",
+    brand: "Aura",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/inserts-and-die-mold-orion-group.jpg",
     productItems: [
       {
         name: "Power High Feed Inserts from Aura Germany",
@@ -773,6 +782,8 @@ export const productCategories: ProductCategory[] = [
     title: "Work Holding Solutions",
     subtitle: "Smartgrip precision workholding for 5-axis machining",
     description: "Advanced workholding systems including Smartgrip for 5-axis machines, precision vises, and custom clamping solutions.",
+    brand: "MST",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/MST-5-axis-orion-group.jpeg",
     productItems: [
       {
         name: "Smartgrip Work Holders (5-Axis)",
@@ -853,6 +864,8 @@ export const productCategories: ProductCategory[] = [
     title: "Shrink-Fit Holders",
     subtitle: "MST Japan ultra-precision shrink fit technology",
     description: "Advanced shrink fit holding systems from MST Japan providing maximum runout accuracy and rigidity for high-speed machining operations.",
+    brand: "MST",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/shrink-fit-holder-orion-group-toolings-online-1-1.jpg",
     productItems: [
       {
         name: "2-Piece Type Shrink Fit Holders — MST Slimline",
@@ -939,6 +952,8 @@ export const productCategories: ProductCategory[] = [
     title: "Indexable Milling Tools",
     subtitle: "Maximum productivity for heavy-duty machining",
     description: "Indexable milling systems designed for high metal removal rates, reduced machining costs, and excellent surface finish in demanding applications.",
+    brand: "Calm Borg",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/inserts-and-die-mold-orion-group.jpg",
     productItems: [
       {
         name: "Face Mills",
@@ -1037,6 +1052,8 @@ export const productCategories: ProductCategory[] = [
     title: "Turning Tools",
     subtitle: "Precision solutions for CNC turning centers",
     description: "Comprehensive range of turning tools, holders, and inserts for all CNC turning, boring, grooving, and threading operations.",
+    brand: "Calm Borg",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/Showa-Boring-Bar.jpeg",
     productItems: [
       {
         name: "External Turning Holders",
@@ -1150,6 +1167,7 @@ export const productCategories: ProductCategory[] = [
     title: "Cutting Inserts",
     subtitle: "Premium carbide grades for superior performance",
     description: "Wide range of cutting inserts for turning, milling, drilling, grooving, and threading in various carbide grades and coatings.",
+    brand: "Calm Borg",
     productItems: [
       {
         name: "Turning Inserts (CNGA, CNMG, TNMG, WNMG)",
@@ -1247,6 +1265,7 @@ export const productCategories: ProductCategory[] = [
     title: "Measuring Touch Probes",
     subtitle: "Blum Novotest touch probes and measuring equipment",
     description: "Precision measuring and probing systems for in-process measurement, tool setting, and quality control.",
+    brand: "Blum Novotest",
     productItems: [
       {
         name: "TC50 Touch Probe — Blum Novotest Germany",
@@ -1341,6 +1360,8 @@ export const productCategories: ProductCategory[] = [
     title: "CNC Rotary Tables",
     subtitle: "Nikken Japan precision rotary table systems",
     description: "Precision CNC rotary tables from Nikken Japan for 4th and 5-axis machining operations with high positioning accuracy.",
+    brand: "Nikken",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/Nikken-rotary-table.jpeg",
     productItems: [
       {
         name: "CNC Rotary Table Systems (Nikken)",
@@ -1373,6 +1394,8 @@ export const productCategories: ProductCategory[] = [
     title: "EDM Tooling Systems",
     subtitle: "Erowa precision EDM electrode & workpiece holding",
     description: "Precision EDM tooling and electrode holding systems from Erowa for electrical discharge machining operations.",
+    brand: "EROWA",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/EDM-Toolin-System–Erowa-Switzerland-orion-group-1-1.jpg",
     productItems: [
       {
         name: "EDM Tooling Systems (Erowa)",
@@ -1404,6 +1427,8 @@ export const productCategories: ProductCategory[] = [
     title: "Angle Heads",
     subtitle: "MST Japan precision angle heads for angular machining",
     description: "Precision angle heads from MST Japan enabling machining at various angles without repositioning the workpiece.",
+    brand: "MST",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/MST-angle-holder.jpeg",
     productItems: [
       {
         name: "Half Angle Head 90° (MST Japan)",
@@ -1435,6 +1460,7 @@ export const productCategories: ProductCategory[] = [
     title: "Holder Balancing Machine",
     subtitle: "Schussler Germany intelligent balancing technology",
     description: "Intelligent tool holder balancing machines from Schussler Germany for vibration reduction and spindle protection.",
+    brand: "Schüssler",
     productItems: [
       {
         name: "Tool Holder Balancing Machine (Schussler Germany)",
@@ -1543,6 +1569,8 @@ export const productCategories: ProductCategory[] = [
     title: "Micro Boring Heads",
     subtitle: "Ultra-precision boring for fine finishing operations",
     description: "Micro boring heads for ultra-precision internal diameter boring with adjustable boring diameters and micron-level accuracy.",
+    brand: "MST",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/MST-boring-head-orion-group.jpeg",
     productItems: [
       {
         name: "Micro Boring Heads",
@@ -1577,6 +1605,8 @@ export const productCategories: ProductCategory[] = [
     title: "Boring Holders",
     subtitle: "Roughing & finishing boring solutions",
     description: "Precision boring holders for both roughing and finishing operations, providing accurate internal diameter machining with excellent surface finish.",
+    brand: "Showa",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/Showa-Boring-Bar.jpeg",
     productItems: [
       {
         name: "Boring Holders, Finecut (Showa Japan)",
@@ -1608,10 +1638,11 @@ export const productCategories: ProductCategory[] = [
   // ================================================================
   {
     id: "vices",
-    slug: "machine-vices",
-    title: "Machine Vices",
+    slug: "manual-pneumatic-hydraulic-vice",
+    title: "Vice (M|N|H)",
     subtitle: "Precision vices for secure workholding",
     description: "High-precision machine vices in M, N, and H series for secure and accurate workpiece clamping in milling, drilling, and grinding operations.",
+    brand: "Calm Borg",
     productItems: [
       {
         name: "Machine Vices (M / N / H Series)",
@@ -1646,6 +1677,8 @@ export const productCategories: ProductCategory[] = [
     title: "Electric Pencil Hand Grinders",
     subtitle: "Precision hand grinding for deburring and finishing",
     description: "Electric pencil hand grinders for precision deburring, chamfering, and finishing operations. Compact design for access to tight spaces.",
+    brand: "Leutor",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/Leutor-pencil-hand-grinder-orion-group-.jpeg",
     productItems: [
       {
         name: "Electric Pencil Hand Grinders (Leutor Japan)",
@@ -1681,6 +1714,8 @@ export const productCategories: ProductCategory[] = [
     title: "Wire Cut EDM Fixtures",
     subtitle: "Precision workholding for wire EDM machines",
     description: "Precision fixtures and workholding systems designed specifically for wire electrical discharge machining (EDM) operations.",
+    brand: "MST",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/Wire-Cut-EDM-Work-Holding-Fixture-MST-orion-tooling.jpg",
     productItems: [
       {
         name: "Wire Cut EDM Fixtures (MST Japan)",
@@ -1715,6 +1750,8 @@ export const productCategories: ProductCategory[] = [
     title: "Magnetic Beds & Lifts",
     subtitle: "Magnetic workholding and lifting solutions",
     description: "Magnetic beds and lifting systems for secure workholding and safe material handling in grinding, milling, and heavy machining operations.",
+    brand: "Shinji",
+    image: "https://orioninnotech.com/wp-content/uploads/2020/07/shinji-magnetic-bed.jpeg",
     productItems: [
       {
         name: "Magnetic Beds & Lifts",
@@ -1737,6 +1774,80 @@ export const productCategories: ProductCategory[] = [
     ],
     applications: ["Surface Grinding", "Surface Milling", "Heavy Plate Machining", "Material Handling"],
     benefits: ["Damage-free clamping", "Uniform force distribution", "Quick setup", "Safe material handling"],
+  },
+
+  // ================================================================
+  // 19. HYDRAULIC CHUCKS (Ushinka Japan)
+  // ================================================================
+  {
+    id: "hydraulic-chucks",
+    slug: "hydraulic-chucks",
+    title: "Hydraulic Chucks",
+    subtitle: "Ushinka Japan high-precision hydraulic chuck systems",
+    description: "High quality and precision hydraulic chucks from Ushinka Corporation, Japan. Superior clamping force with excellent runout accuracy for demanding machining applications.",
+    brand: "Ushinka",
+    image: "https://orioninnotech.com/wp-content/uploads/2025/01/Ushinka-Hydraulic-Chucks.jpg",
+    productItems: [
+      {
+        name: "Ushinka Hydraulic Chucks",
+        slug: "ushinka-hydraulic-chucks",
+        image: "https://orioninnotech.com/wp-content/uploads/2025/01/Ushinka-Hydraulic-Chucks.jpg",
+        brand: "Ushinka Japan",
+        shortDescription: "High quality and precision hydraulic chucks from Ushinka Corporation, Japan",
+        description: "Ushinka Hydraulic Chucks deliver superior clamping force with excellent runout accuracy. The hydraulic clamping mechanism provides uniform gripping around the entire tool shank, resulting in vibration-free machining and extended tool life.",
+        specifications: [
+          { label: "Brand", value: "Ushinka Corporation (Japan)" },
+          { label: "Type", value: "Hydraulic Chuck" },
+          { label: "Runout Accuracy", value: "< 0.003mm" },
+          { label: "Taper Types", value: "BT / HSK / CAT" },
+          { label: "Clamping Type", value: "Hydraulic" },
+        ],
+        features: ["Uniform clamping force", "Excellent vibration damping", "Superior runout accuracy", "Quick tool changes", "Extended tool life"],
+        applications: ["Precision finishing", "High-speed machining", "Surface-critical operations", "Die and mold finishing"],
+        materials: ["Steel", "Stainless Steel", "Aluminum", "Hardened Steel"],
+      },
+      {
+        name: "Slim-Type Hydraulic Chucks",
+        slug: "slim-type-hydraulic-chucks",
+        image: "https://orioninnotech.com/wp-content/uploads/2025/01/Ushinka1.jpg",
+        brand: "Ushinka Japan",
+        shortDescription: "Slim profile hydraulic chucks for deep cavity and tight access machining",
+        description: "Slim-Type Hydraulic Chucks from Ushinka feature a reduced outer diameter for improved accessibility in deep cavities and tight workpiece geometries while maintaining the precision and clamping force of standard hydraulic chucks.",
+        specifications: [
+          { label: "Brand", value: "Ushinka Corporation (Japan)" },
+          { label: "Type", value: "Slim-Type Hydraulic" },
+          { label: "Profile", value: "Slim / Reduced OD" },
+          { label: "Runout Accuracy", value: "< 0.003mm" },
+        ],
+        features: ["Slim profile for tight access", "Hydraulic precision clamping", "Deep cavity capability", "Excellent surface finish"],
+        applications: ["Deep cavity machining", "Die and mold", "5-axis machining", "Precision finishing"],
+        materials: ["Steel", "Stainless Steel", "Hardened Steel"],
+      },
+      {
+        name: "High-Speed Hydraulic Chucks",
+        slug: "high-speed-hydraulic-chucks",
+        image: "https://orioninnotech.com/wp-content/uploads/2025/01/Ushinka2.jpg",
+        brand: "Ushinka Japan",
+        shortDescription: "Balanced hydraulic chucks rated for high-speed machining operations",
+        description: "High-Speed Hydraulic Chucks from Ushinka are precision-balanced for high RPM operations. Combined with hydraulic clamping technology, these chucks deliver vibration-free performance at elevated speeds.",
+        specifications: [
+          { label: "Brand", value: "Ushinka Corporation (Japan)" },
+          { label: "Type", value: "High-Speed Hydraulic" },
+          { label: "Speed Rating", value: "Up to 30,000 RPM" },
+          { label: "Balance Grade", value: "G2.5 @ 25,000 RPM" },
+        ],
+        features: ["Precision balanced", "High-speed capability", "Vibration-free performance", "Hydraulic clamping precision"],
+        applications: ["High-speed machining", "Aerospace finishing", "Precision production", "High-RPM operations"],
+        materials: ["Aluminum", "Steel", "Stainless Steel"],
+      },
+    ],
+    products: [
+      "Ushinka Hydraulic Chucks",
+      "Slim-Type Hydraulic Chucks",
+      "High-Speed Hydraulic Chucks",
+    ],
+    applications: ["Precision Finishing", "High-Speed Machining", "Die & Mold", "Surface-Critical Operations"],
+    benefits: ["Ushinka Japan quality", "Superior runout accuracy", "Vibration-free machining", "Extended tool life"],
   },
 ];
 

@@ -222,10 +222,36 @@ function CategoryCard({ category }: { category: ProductCategory }) {
       <div className="absolute left-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
       <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 
+      {/* Brand Badge */}
+      {category.brand && (
+        <div className="absolute right-6 top-6 z-10 rounded-lg bg-[var(--dark-bg)] px-3 py-1.5 shadow-[2px_2px_6px_rgba(0,0,0,0.2)]">
+          <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-white">
+            {category.brand}
+          </span>
+        </div>
+      )}
+
       <div className="relative">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
-          {/* Left: Info */}
-          <div className="flex-1">
+          {/* Category Thumbnail */}
+          {category.image && (
+            <div className="shrink-0 lg:w-56">
+              <div className="overflow-hidden rounded-xl bg-white shadow-[var(--shadow-recessed)]">
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  className="h-44 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-52"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.parentElement!.style.display = "none";
+                  }}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Right: Info */}
+          <div className="flex-1 min-w-0">
             <div className="mb-4 flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
                 <CircleDot size={22} className="text-white" />
@@ -257,6 +283,14 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                       key={item.name}
                       className="group relative overflow-hidden rounded-xl bg-[var(--muted)] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
                     >
+                      {/* Brand label */}
+                      {item.brand && (
+                        <div className="absolute left-2 top-2 z-10 rounded bg-[var(--dark-bg)]/80 px-2 py-0.5 backdrop-blur-sm">
+                          <span className="font-mono text-[9px] font-bold uppercase tracking-wider text-white/90">
+                            {item.brand}
+                          </span>
+                        </div>
+                      )}
                       {/* Product Image */}
                       {item.image ? (
                         <div className="relative h-40 overflow-hidden bg-white">
@@ -284,9 +318,9 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                         <h5 className="text-xs font-bold text-[var(--foreground)] leading-tight group-hover:text-[var(--accent)] transition-colors">
                           {item.name}
                         </h5>
-                        {item.description && (
-                          <p className="mt-1 text-[10px] text-[var(--text-muted)] leading-snug">
-                            {item.description}
+                        {item.shortDescription && (
+                          <p className="mt-1 text-[10px] text-[var(--text-muted)] leading-snug line-clamp-2">
+                            {item.shortDescription}
                           </p>
                         )}
                       </div>

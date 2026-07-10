@@ -1,6 +1,6 @@
 services:
   - type: web
     name: calm-borg-website
-    env: node
+    env: static
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    publishPath: out

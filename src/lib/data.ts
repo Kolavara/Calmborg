@@ -1751,7 +1751,6 @@ export const productCategories: ProductCategory[] = [
     subtitle: "Magnetic workholding and lifting solutions",
     description: "Magnetic beds and lifting systems for secure workholding and safe material handling in grinding, milling, and heavy machining operations.",
     brand: "Shinji",
-    image: "https://orioninnotech.com/wp-content/uploads/2020/07/shinji-magnetic-bed.jpeg",
     productItems: [
       {
         name: "Magnetic Beds & Lifts",

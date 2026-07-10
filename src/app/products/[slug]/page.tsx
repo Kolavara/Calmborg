@@ -12,6 +12,7 @@ import {
   Tag,
   Box,
   Settings,
+  Download,
 } from "lucide-react";
 
 // Helper to find a product by slug across all categories
@@ -141,7 +142,7 @@ export default function ProductDetailPage({
               )}
 
               {/* Quick Actions */}
-              <div className="flex flex-col gap-3 sm:flex-row">
+              <div className="flex flex-col gap-3 sm:flex-row flex-wrap">
                 <Link
                   href="/contact#rfq"
                   className="flex items-center justify-center gap-2 rounded-xl bg-[var(--accent)] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white shadow-[3px_3px_8px_rgba(255,71,87,0.35)] transition-all hover:translate-y-[1px] hover:shadow-[inset_3px_3px_6px_rgba(0,0,0,0.2)]"
@@ -149,6 +150,14 @@ export default function ProductDetailPage({
                   Request a Quote
                   <ArrowRight size={16} />
                 </Link>
+                <a
+                  href={`/${product.slug}-catalog.pdf`}
+                  download
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--muted)] px-6 py-3 text-sm font-bold uppercase tracking-wider text-[var(--foreground)] shadow-[var(--shadow-card)] transition-all hover:translate-y-[1px] hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1)]"
+                >
+                  <Download size={16} />
+                  Catalog
+                </a>
                 <a
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
                   target="_blank"

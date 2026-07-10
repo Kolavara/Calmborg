@@ -17,6 +17,7 @@ import {
   Phone,
   Filter,
   Image,
+  Download,
 } from "lucide-react";
 
 export default function ProductsPage() {
@@ -107,7 +108,7 @@ export default function ProductsPage() {
                         : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
                     }`}
                   >
-                    {cat.title.split(" ").slice(0, 2).join(" ")}
+                    {cat.title}
                   </button>
                 ))}
               </div>

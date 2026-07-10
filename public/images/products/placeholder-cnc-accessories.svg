@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f8f9fa" rx="8"/>
+  <circle cx="160" cy="100" r="25" fill="none" stroke="#adb5bd" stroke-width="2"/>
+  <circle cx="160" cy="100" r="12" fill="#dee2e6"/>
+  <rect x="210" y="80" width="40" height="40" rx="4" fill="#ced4da" stroke="#adb5bd" stroke-width="1.5"/>
+  <rect x="270" y="85" width="30" height="30" rx="3" fill="#dee2e6" stroke="#adb5bd" stroke-width="1.5"/>
+  <text x="200" y="180" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#495057">CNC Accessories</text>
+  <text x="200" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6c757d">Collets, Pull Studs &amp; More</text>
+</svg>

@@ -16,6 +16,7 @@ import {
   MessageCircle,
   Phone,
   Filter,
+  Image,
 } from "lucide-react";
 
 export default function ProductsPage() {
@@ -222,7 +223,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
       <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 
       <div className="relative">
-        <div className="flex flex-col gap-6 md:flex-row md:items-start">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
           {/* Left: Info */}
           <div className="flex-1">
             <div className="mb-4 flex items-center gap-3">
@@ -243,24 +244,70 @@ function CategoryCard({ category }: { category: ProductCategory }) {
               {category.description}
             </p>
 
-            {/* Products Grid */}
+            {/* Products Grid with Images */}
             <div className="mb-4">
               <h4 className="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                 Products
               </h4>
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                {category.products.map((product) => (
-                  <div
-                    key={product}
-                    className="flex items-center gap-2 rounded-lg bg-[var(--muted)] px-3 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]"
-                  >
-                    <Check size={12} className="shrink-0 text-[var(--accent)]" />
-                    <span className="text-xs font-medium text-[var(--foreground)]">
-                      {product}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              {category.productItems && category.productItems.length > 0 ? (
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {category.productItems.map((item) => (
+                    <Link
+                      href={`/products/${item.slug}`}
+                      key={item.name}
+                      className="group relative overflow-hidden rounded-xl bg-[var(--muted)] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
+                    >
+                      {/* Product Image */}
+                      {item.image ? (
+                        <div className="relative h-40 overflow-hidden bg-white">
+                          <img
+                            src={item.image}
+                            alt={item.name}
+                            className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = "none";
+                              target.nextElementSibling?.classList.remove("hidden");
+                            }}
+                          />
+                          <div className="hidden absolute inset-0 flex items-center justify-center bg-[var(--muted)]">
+                            <Image size={32} className="text-[var(--text-muted)]" />
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="flex h-40 items-center justify-center bg-[var(--muted)]">
+                          <Image size={32} className="text-[var(--text-muted)]" />
+                        </div>
+                      )}
+                      {/* Product Info */}
+                      <div className="p-3">
+                        <h5 className="text-xs font-bold text-[var(--foreground)] leading-tight group-hover:text-[var(--accent)] transition-colors">
+                          {item.name}
+                        </h5>
+                        {item.description && (
+                          <p className="mt-1 text-[10px] text-[var(--text-muted)] leading-snug">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+                  {category.products.map((product) => (
+                    <div
+                      key={product}
+                      className="flex items-center gap-2 rounded-lg bg-[var(--muted)] px-3 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]"
+                    >
+                      <Check size={12} className="shrink-0 text-[var(--accent)]" />
+                      <span className="text-xs font-medium text-[var(--foreground)]">
+                        {product}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Applications / Benefits / Materials */}

@@ -32,6 +32,18 @@ function getRelatedProducts(category: ProductCategory, currentSlug: string): Pro
   return category.productItems.filter((p) => p.slug !== currentSlug);
 }
 
+export function generateStaticParams() {
+  const params: { slug: string }[] = [];
+  productCategories.forEach((cat) => {
+    if (cat.productItems) {
+      cat.productItems.forEach((p) => {
+        params.push({ slug: p.slug });
+      });
+    }
+  });
+  return params;
+}
+
 export default function ProductDetailPage({
   params,
 }: {

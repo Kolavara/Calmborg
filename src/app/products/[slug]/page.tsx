@@ -1,8 +1,7 @@
-"use client";
-
 import { use } from "react";
 import Link from "next/link";
 import { productCategories, company, ProductItem, ProductCategory } from "@/lib/data";
+import { ProductImage } from "@/components/ProductImage";
 import {
   ArrowLeft,
   ArrowRight,
@@ -110,23 +109,7 @@ export default function ProductDetailPage({
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             {/* Left: Product Image */}
             <div className="relative">
-              <div className="overflow-hidden rounded-2xl bg-white shadow-[var(--shadow-card)]">
-                {product.image ? (
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="h-80 w-full object-contain p-8 lg:h-[400px]"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = "none";
-                      target.nextElementSibling?.classList.remove("hidden");
-                    }}
-                  />
-                ) : null}
-                <div className={`${product.image ? "hidden" : ""} flex h-80 items-center justify-center bg-[var(--muted)] lg:h-[400px]`}>
-                  <Box size={64} className="text-[var(--text-muted)]" />
-                </div>
-              </div>
+              <ProductImage product={product} />
               {product.brand && (
                 <div className="absolute right-4 top-4 rounded-lg bg-[var(--dark-bg)] px-3 py-1.5">
                   <span className="font-mono text-xs font-bold uppercase tracking-wider text-white">

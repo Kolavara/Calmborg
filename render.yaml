@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: calm-borg-website
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start

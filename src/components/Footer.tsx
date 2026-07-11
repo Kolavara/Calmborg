@@ -17,13 +17,6 @@ const productLinks = [
   { label: "Cutting Inserts", href: "/products#cutting-inserts" },
 ];
 
-const resourceLinks = [
-  { label: "Tool Selection Guide", href: "/resources#tool-selection" },
-  { label: "Speed & Feed Calculator", href: "/resources#speed-feed" },
-  { label: "Product Catalogue", href: "/resources#catalogue" },
-  { label: "Industries Served", href: "/industries" },
-];
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -126,27 +119,11 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Resources & CTA */}
+            {/* Contact & CTA */}
             <div>
               <h4 className="mb-6 font-mono text-[13px] font-bold uppercase tracking-widest text-white">
-                Resources
+                Contact
               </h4>
-              <ul className="space-y-3 mb-8">
-                {resourceLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="group flex items-center gap-2 text-sm text-[var(--dark-text-muted)] transition-colors hover:text-white"
-                    >
-                      <ChevronRight
-                        size={12}
-                        className="transition-transform group-hover:translate-x-1 text-[var(--accent)]"
-                      />
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
 
               {/* WhatsApp CTA */}
               <a

@@ -117,7 +117,7 @@ export default function ProductsPage() {
                               className={`text-left text-sm transition-all ${
                                 activeCategory === cat.id
                                   ? "text-[var(--accent)] font-bold translate-x-1"
-                                  : "text-[var(--text-muted)] hover:text-[var(--foreground)] hover:translate-x-1"
+                                  : "text-[var(--text-muted)] hover:text-[var(--accent)] hover:translate-x-1"
                               }`}
                             >
                               {cat.title}

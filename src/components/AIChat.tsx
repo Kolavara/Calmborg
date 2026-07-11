@@ -371,9 +371,6 @@ export default function AIChat() {
               )}
             </button>
           </form>
-          <p className="mt-1.5 sm:mt-2 text-center font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
-            Powered by Groq AI
-          </p>
         </div>
       </div>
     </>

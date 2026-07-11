@@ -9,8 +9,7 @@ import {
   stats,
   industries,
 } from "@/lib/data";
-import {
-  ArrowRight,
+import { ArrowRight,
   CheckCircle,
   Target,
   Eye,
@@ -28,8 +27,7 @@ import {
   Zap,
   Cpu,
   Wrench,
-  Quote,
-} from "lucide-react";
+  Quote, Download } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   CheckCircle,

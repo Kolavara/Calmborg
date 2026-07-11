@@ -138,6 +138,14 @@ export default function ProductDetailPage({
 
               {/* Quick Actions */}
               <div className="flex flex-col gap-3 sm:flex-row flex-wrap">
+                <a
+                  href="/catalog.pdf"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
+                >
+                  <Download size={16} />
+                  Catalog
+                </a>
                 <Link
                   href="/contact#rfq"
                   className="flex items-center justify-center gap-2 rounded-xl bg-[var(--accent)] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white shadow-[3px_3px_8px_rgba(255,71,87,0.35)] transition-all hover:translate-y-[1px] hover:shadow-[inset_3px_3px_6px_rgba(0,0,0,0.2)]"
@@ -320,7 +328,7 @@ export default function ProductDetailPage({
                     {related.name}
                   </h3>
                   {related.shortDescription && (
-                    <p className="mt-1 text-[13px] text-[var(--text-muted)] line-clamp-2">
+                    <p className="mt-1 text-sm text-[var(--text-muted)] line-clamp-2">
                       {related.shortDescription}
                     </p>
                   )}
@@ -345,6 +353,14 @@ export default function ProductDetailPage({
                 Our team is ready to help you find the perfect tooling solution.
               </p>
               <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <a
+                  href="/catalog.pdf"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
+                >
+                  <Download size={16} />
+                  Catalog
+                </a>
                 <Link
                   href="/contact#rfq"
                   className="flex items-center gap-2 rounded-xl bg-[var(--accent)] px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-[4px_4px_12px_rgba(255,71,87,0.35)] transition-all hover:translate-y-[2px]"

@@ -1305,7 +1305,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Presetters",
         slug: "tool-presetters",
-        image: "https://orioninnotech.com/wp-content/uploads/2024/04/blumtc50-726x1024.jpg",
+        image: "/images/products/placeholder-cnc-accessories.svg",
         shortDescription: "Offline tool measurement and presetting systems",
         description: "Tool presetter systems for offline measurement of tool length, diameter, and other parameters. Reduces machine downtime and improves setup accuracy.",
         specifications: [
@@ -1319,7 +1319,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Length Measuring Systems",
         slug: "tool-length-measuring-systems",
-        image: "https://orioninnotech.com/wp-content/uploads/2024/04/blumtc50-726x1024.jpg",
+        image: "/images/products/placeholder-cnc-accessories.svg",
         shortDescription: "In-machine tool length measurement systems",
         description: "In-machine tool length measuring systems for automatic tool length compensation. Ensures consistent part quality across tool changes.",
         specifications: [
@@ -1333,7 +1333,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Workpiece Probing Systems",
         slug: "workpiece-probing-systems",
-        image: "https://orioninnotech.com/wp-content/uploads/2024/04/blumtc50-726x1024.jpg",
+        image: "/images/products/placeholder-cnc-accessories.svg",
         shortDescription: "Automated workpiece probing for setup and inspection",
         description: "Automated workpiece probing systems for part setup, alignment, and in-process inspection. Integrates with CNC controllers for fully automated measurement cycles.",
         specifications: [
@@ -1347,7 +1347,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Storage Systems",
         slug: "tool-storage-systems",
-        image: "https://orioninnotech.com/wp-content/uploads/2024/04/blumtc50-726x1024.jpg",
+        image: "/images/products/placeholder-cnc-accessories.svg",
         shortDescription: "Organized tool storage and management systems",
         description: "Tool storage and management systems for organized storage of cutting tools, holders, and accessories. Improves workshop efficiency and tool lifecycle management.",
         specifications: [

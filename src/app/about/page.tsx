@@ -27,7 +27,7 @@ import { ArrowRight,
   Zap,
   Cpu,
   Wrench,
-  Quote, Download } from "lucide-react";
+  Quote } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   CheckCircle,

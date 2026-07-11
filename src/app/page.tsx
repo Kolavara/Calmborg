@@ -34,7 +34,7 @@ import { ArrowRight,
   Award,
   Clock,
   Star,
-  CircleDot, Download } from "lucide-react";
+  CircleDot } from "lucide-react";
 
 /* ─── Animated Counter ─── */
 function AnimatedStat({
@@ -202,14 +202,6 @@ export default function Home() {
                     className="transition-transform group-hover:translate-x-1"
                   />
                 </Link>
-                <a
-                  href="/catalog.pdf"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
-                >
-                  <Download size={16} />
-                  Catalog
-                </a>
                 <Link
                   href="/contact#rfq"
                   className="flex items-center justify-center gap-2 rounded-xl bg-[var(--muted)] px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--foreground)] shadow-[var(--shadow-card)] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[var(--shadow-pressed)]"
@@ -584,15 +576,7 @@ export default function Home() {
                   information to receive expert tooling recommendations.
                 </p>
                 <div className="flex flex-col gap-3 sm:flex-row">
-                  <a
-                  href="/catalog.pdf"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
-                >
-                  <Download size={16} />
-                  Catalog
-                </a>
-                <Link
+                  <Link
                     href="/contact#rfq"
                     className="flex items-center justify-center gap-2 rounded-xl bg-[var(--accent)] px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-[4px_4px_12px_rgba(255,71,87,0.35),-4px_-4px_12px_rgba(255,100,110,0.35)] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.2)]"
                   >

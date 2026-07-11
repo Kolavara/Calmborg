@@ -9,7 +9,7 @@ import { Menu,
   Phone,
   Mail,
   MessageCircle,
-  ChevronRight, Download } from "lucide-react";
+  ChevronRight } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -113,15 +113,7 @@ export default function Header() {
 
           {/* CTA + Mobile Menu Button */}
           <div className="flex items-center gap-3">
-            <a
-                  href="/catalog.pdf"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
-                >
-                  <Download size={16} />
-                  Catalog
-                </a>
-                <Link
+            <Link
               href="/contact#rfq"
               className="hidden items-center gap-2 whitespace-nowrap rounded-xl bg-[var(--accent)] px-6 py-3 text-base font-bold uppercase tracking-wider text-white shadow-[3px_3px_8px_rgba(255,71,87,0.35),-3px_-3px_8px_rgba(255,100,110,0.35)] transition-all duration-150 hover:translate-y-[1px] hover:shadow-[inset_3px_3px_6px_rgba(0,0,0,0.2)] sm:flex"
             >

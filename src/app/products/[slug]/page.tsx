@@ -139,9 +139,9 @@ export default function ProductDetailPage({
               {/* Quick Actions */}
               <div className="flex flex-col gap-3 sm:flex-row flex-wrap">
                 <a
-                  href="/catalog.pdf"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
+                  href={`/${product.slug}-catalog.pdf`}
+                  download
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--muted)] px-6 py-3 text-sm font-bold uppercase tracking-wider text-[var(--foreground)] shadow-[var(--shadow-card)] transition-all hover:translate-y-[1px] hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1)]"
                 >
                   <Download size={16} />
                   Catalog
@@ -153,14 +153,6 @@ export default function ProductDetailPage({
                   Request a Quote
                   <ArrowRight size={16} />
                 </Link>
-                <a
-                  href={`/${product.slug}-catalog.pdf`}
-                  download
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--muted)] px-6 py-3 text-sm font-bold uppercase tracking-wider text-[var(--foreground)] shadow-[var(--shadow-card)] transition-all hover:translate-y-[1px] hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1)]"
-                >
-                  <Download size={16} />
-                  Catalog
-                </a>
                 <a
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
                   target="_blank"
@@ -353,14 +345,6 @@ export default function ProductDetailPage({
                 Our team is ready to help you find the perfect tooling solution.
               </p>
               <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <a
-                  href="/catalog.pdf"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--dark-bg)] border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--dark-text-muted)] transition-all duration-150 hover:translate-y-[2px] hover:text-white hover:border-white/20"
-                >
-                  <Download size={16} />
-                  Catalog
-                </a>
                 <Link
                   href="/contact#rfq"
                   className="flex items-center gap-2 rounded-xl bg-[var(--accent)] px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-[4px_4px_12px_rgba(255,71,87,0.35)] transition-all hover:translate-y-[2px]"

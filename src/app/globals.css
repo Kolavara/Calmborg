@@ -71,6 +71,7 @@
 }
 
 html {
+  font-size: 17px; /* Increase base font size from 16px to 17px to improve visibility site-wide */
 }
 
 body {

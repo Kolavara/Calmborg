@@ -491,7 +491,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Hydraulic Chucks",
         slug: "hydraulic-chucks",
-        image: "https://orioninnotech.com/wp-content/uploads/2025/01/Ushinka-Hydraulic-Chucks.jpg",
+        image: "/images/products/hydraulic_chuck.png",
         brand: "MST Japan",
         shortDescription: "High-precision hydraulic chucks for vibration-free machining",
         description: "Hydraulic chucks use oil pressure to provide uniform clamping force around the entire tool shank, resulting in excellent runout accuracy and vibration damping.",

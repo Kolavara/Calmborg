@@ -629,6 +629,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Ball Nose Inserts",
         slug: "ball-nose-inserts-aura",
+        image: "/images/products/milling_inserts.png",
         brand: "Aura Germany",
         shortDescription: "Precision ball nose inserts for smooth 3D surface finishing",
         description: "Ball nose inserts from Aura Germany for achieving smooth, high-quality 3D surface finishes in die and mold applications.",

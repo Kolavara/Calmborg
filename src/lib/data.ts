@@ -937,7 +937,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "EDM Tooling Systems (Erowa)",
         slug: "edm-tooling-systems-erowa",
-        image: "/images/products/erowa-catalog.png",
+        image: "/images/products/erowa-catalog.jpg",
         brand: "Erowa",
         shortDescription: "Precision EDM tooling and electrode holding systems from Erowa",
         description: "Erowa EDM tooling systems provide standardized electrode and workpiece holding for electrical discharge machining. Ensures quick setup and high repeatability.",

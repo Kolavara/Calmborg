@@ -40,3 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 chrome-win/
+public/edm-tooling-systems-erowa-catalog.pdf

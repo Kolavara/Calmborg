@@ -900,24 +900,7 @@ export const productCategories: ProductCategory[] = [
     brand: "Calm Borg",
     productItems: [
       {
-        name: "Mechanical Force-multiplier Machine Vises - Tsudakoma",
-        slug: "tsudakoma-vi-machine-vises",
-        image: "https://orioninnotech.com/wp-content/uploads/2020/08/Tsudakoma-Vice.jpg", // educated guess for image url, fallback below if it doesn't work. actually let's use the placeholder for now or let the user fix the image link. Wait, I'll use a data uri or just a placeholder since I don't know the exact URL.
-        // Actually, let's just use "https://orioninnotech.com/wp-content/uploads/2020/07/Mechanical-Force-multiplier-Machine-Vises-orion-grou.jpg" since that's what we have locally
-        shortDescription: "Manual, Pneumatic & Hydraulic Vice - Vi | Types Vi-1216, Vi-1222, Vi-1627, Vi-1635, Vi-2041",
-        description: "Mechanical Force-multiplier Machine Vises by Tsudakoma. Includes Manual, Pneumatic & Hydraulic Vice options in the Vi series.",
-        specifications: [
-          { label: "Product Make", value: "Tsudakoma" },
-          { label: "Product Code", value: "OR-TSKM-VI" },
-          { label: "Model No./ Series", value: "Vi" },
-          { label: "Available Types", value: "Vi-1216, Vi-1222, Vi-1627, Vi-1635, Vi-2041" }
-        ],
-        features: ["Mechanical Force-multiplier", "Manual, Pneumatic & Hydraulic options", "High precision"],
-        applications: ["Milling", "Drilling", "Heavy duty machining"],
-        materials: ["Steel", "Cast Iron"],
-      },
-      {
-        name: "Machine Vices (M / N / H Series)",
+        name: "Machine Vices",
         slug: "machine-vices-m-n-h-series",
         image: "https://orioninnotech.com/wp-content/uploads/2020/07/Mechanical-Force-multiplier-Machine-Vises-orion-grou.jpg",
         shortDescription: "Precision machine vices in multiple series for different applications",
@@ -934,8 +917,7 @@ export const productCategories: ProductCategory[] = [
       },
     ],
     products: [
-      "Mechanical Force-multiplier Machine Vises - Tsudakoma",
-      "Machine Vices (M / N / H Series)",
+      "Machine Vices",
     ],
     applications: ["Milling", "Drilling", "Surface Grinding", "General Machining"],
     benefits: ["High parallelism accuracy", "Robust construction", "Quick setup", "Multiple series available"],
@@ -955,7 +937,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "EDM Tooling Systems (Erowa)",
         slug: "edm-tooling-systems-erowa",
-        image: "https://orioninnotech.com/wp-content/uploads/2020/07/EROWA-EDM-Tooling.jpg",
+        image: "/images/products/erowa-catalog.png",
         brand: "Erowa",
         shortDescription: "Precision EDM tooling and electrode holding systems from Erowa",
         description: "Erowa EDM tooling systems provide standardized electrode and workpiece holding for electrical discharge machining. Ensures quick setup and high repeatability.",

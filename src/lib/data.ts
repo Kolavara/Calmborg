@@ -460,6 +460,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "N Series Micron Chuck (Showa)",
         slug: "n-series-micron-chuck-showa",
+        image: "/images/products/milling_chuck.png",
         brand: "Showa Japan",
         shortDescription: "Ultra-precision micron-level chuck system from Showa Japan",
         description: "The N Series Micron Chuck from Showa Japan delivers ultra-precision clamping with micron-level runout accuracy. Designed for the most demanding precision machining applications.",
@@ -579,6 +580,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Aura Die & Mold Inserts",
         slug: "aura-die-mold-inserts",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/inserts-and-die-mold-orion-group.jpg",
         brand: "Aura Germany",
         shortDescription: "Premium inserts optimized for hardened steel machining",
         description: "Aura die and mold inserts are specifically engineered for machining hardened tool steels, pre-hardened steels, and hardened components used in die and mold manufacturing.",
@@ -595,6 +597,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Finishing Inserts for Mirror Surface",
         slug: "finishing-inserts-mirror-surface",
+        image: "/images/products/milling_inserts.png",
         brand: "Aura Germany",
         shortDescription: "Precision finishing inserts for mirror-quality surface finish",
         description: "Specialized finishing inserts designed to achieve mirror-quality surface finish on die and mold cavities. Ultra-sharp cutting edges and optimized geometry ensure superior surface quality.",
@@ -610,6 +613,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Copy Milling Inserts",
         slug: "copy-milling-inserts",
+        image: "/images/products/milling_inserts.png",
         brand: "Aura Germany",
         shortDescription: "Ball nose and copy milling inserts for 3D contouring",
         description: "Copy milling inserts designed for 3D contouring and profiling operations in die and mold making. Available in various radii for different surface finish requirements.",

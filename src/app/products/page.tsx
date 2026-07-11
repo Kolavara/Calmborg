@@ -253,15 +253,15 @@ function CategoryCard({ category }: { category: ProductCategory }) {
 
           {/* Right: Info */}
           <div className="flex-1 min-w-0">
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
+            <div className="mb-4 flex flex-wrap items-start gap-3 sm:items-center">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
                 <CircleDot size={22} className="text-white" />
               </div>
-              <div>
+              <div className="flex-1 min-w-0">
                 <h3 className="text-xl font-extrabold text-[var(--foreground)]">
                   {category.title}
                 </h3>
-                <p className="font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
+                <p className="font-mono text-xs uppercase tracking-wider text-[var(--accent)] truncate">
                   {category.subtitle}
                 </p>
               </div>

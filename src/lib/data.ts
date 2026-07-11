@@ -580,7 +580,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Aura Die & Mold Inserts",
         slug: "aura-die-mold-inserts",
-        image: "/images/products/Aura Die & Mold Inserts.png",
+        image: "/images/products/Aura Die & Mold Inserts.jpg",
         brand: "Aura Germany",
         shortDescription: "Premium inserts optimized for hardened steel machining",
         description: "Aura die and mold inserts are specifically engineered for machining hardened tool steels, pre-hardened steels, and hardened components used in die and mold manufacturing.",
@@ -1191,7 +1191,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Magnetic Beds & Lifts",
         slug: "magnetic-beds-and-lifts",
-        image: "/images/products/Magnetic Beds & Lifts.png",
+        image: "/images/products/Magnetic Beds & Lifts.jpg",
         shortDescription: "Electromagnetic and permanent magnetic workholding and lifting systems",
         description: "Magnetic beds and lifting systems provide secure, damage-free workholding for grinding and machining operations. Electromagnetic and permanent magnetic options available for different applications.",
         specifications: [
@@ -1311,7 +1311,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Presetters",
         slug: "tool-presetters",
-        image: "/images/products/Tool Presetters.png",
+        image: "/images/products/Tool Presetters.jpg",
         shortDescription: "Offline tool measurement and presetting systems",
         description: "Tool presetter systems for offline measurement of tool length, diameter, and other parameters. Reduces machine downtime and improves setup accuracy.",
         specifications: [
@@ -1325,7 +1325,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Length Measuring Systems",
         slug: "tool-length-measuring-systems",
-        image: "/images/products/Tool Length Measuring Systems.png",
+        image: "/images/products/Tool Length Measuring Systems.jpg",
         shortDescription: "In-machine tool length measurement systems",
         description: "In-machine tool length measuring systems for automatic tool length compensation. Ensures consistent part quality across tool changes.",
         specifications: [

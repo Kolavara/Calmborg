@@ -283,3 +283,25 @@ body::before {
   transform: translateY(0);
   transition: all 0.5s var(--ease-spring);
 }
+
+/* === Mobile refinements === */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .scroll-mt-32 {
+    scroll-margin-top: 6rem;
+  }
+  
+  /* Larger tap targets for mobile */
+  button, 
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Better touch scrolling */
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}

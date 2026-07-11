@@ -71,12 +71,12 @@ export default function AboutPage() {
                 About Calm Borg
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)] sm:text-5xl lg:text-6xl">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)]">
               Building the Future of{" "}
               <span className="text-[var(--accent)]">Precision</span>{" "}
               Manufacturing
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+            <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-[var(--text-muted)]">
               {companyProfile.description.split("\n")[0]}
             </p>
           </div>
@@ -154,9 +154,9 @@ export default function AboutPage() {
       {/* ═══════════════ MISSION / VISION ═══════════════ */}
       <section className="relative py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
             {/* Mission */}
-            <div className="relative rounded-2xl bg-[var(--background)] p-8 shadow-[var(--shadow-card)]">
+            <div className="relative rounded-2xl bg-[var(--background)] p-5 sm:p-8 shadow-[var(--shadow-card)]">
               <div className="absolute left-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
               <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 
@@ -172,7 +172,7 @@ export default function AboutPage() {
             </div>
 
             {/* Vision */}
-            <div className="relative rounded-2xl bg-[var(--background)] p-8 shadow-[var(--shadow-card)]">
+            <div className="relative rounded-2xl bg-[var(--background)] p-5 sm:p-8 shadow-[var(--shadow-card)]">
               <div className="absolute left-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
               <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 

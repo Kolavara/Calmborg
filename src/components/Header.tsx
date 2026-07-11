@@ -31,13 +31,13 @@ export default function Header() {
     <>
       {/* Top Info Bar */}
       <div className="relative z-50 bg-[var(--dark-bg)] text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-[13px] sm:px-6 lg:px-8">
-          <div className="flex items-center gap-4 sm:gap-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-1.5 text-[12px] sm:px-6 sm:py-2 sm:text-[13px]">
+          <div className="flex items-center gap-2 sm:gap-6">
             <a
               href={`tel:${company.phone}`}
               className="flex items-center gap-1.5 transition-colors hover:text-[var(--accent)]"
             >
-              <Phone size={12} />
+              <Phone size={11} className="sm:size-[12px]" />
               <span className="hidden sm:inline font-mono tracking-wider">{company.phone}</span>
               <span className="sm:hidden font-mono">Call Us</span>
             </a>
@@ -51,7 +51,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3">
             <div className="led led-green animate-pulse-glow" />
-            <span className="font-mono text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
+            <span className="hidden sm:inline font-mono text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
               System Operational
             </span>
             <a
@@ -76,17 +76,17 @@ export default function Header() {
         }`}
         style={{ background: "var(--background)" }}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3.5 group">
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white border-2 border-[var(--dark-bg)] shadow-[4px_4px_12px_rgba(0,0,0,0.2),-2px_-2px_8px_rgba(255,255,255,0.08)] transition-all duration-300 group-hover:shadow-[6px_6px_16px_rgba(0,0,0,0.25),-3px_-3px_10px_rgba(255,255,255,0.1)] p-1">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3.5 group">
+            <div className="flex h-12 w-12 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-white border-2 border-[var(--dark-bg)] shadow-[4px_4px_12px_rgba(0,0,0,0.2),-2px_-2px_8px_rgba(255,255,255,0.08)] transition-all duration-300 group-hover:shadow-[6px_6px_16px_rgba(0,0,0,0.25),-3px_-3px_10px_rgba(255,255,255,0.1)] p-1">
               <img src="/logo.png" alt="Calm Borg Logo" className="h-full w-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)]">
+              <span className="text-sm sm:text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)]">
                 {company.name}
               </span>
-              <span className="font-mono text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line">
+              <span className="font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line hidden sm:block">
                 {company.shortTagline}
               </span>
             </div>

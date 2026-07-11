@@ -32,8 +32,8 @@ export default function Footer() {
         {/* Carbon fiber overlay */}
         <div className="absolute inset-0 carbon-fiber opacity-30" />
         
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:py-16 sm:px-6 lg:px-8">
+          <div className="grid gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-6">
@@ -140,17 +140,17 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
-            <p className="text-[13px] text-[var(--dark-text-muted)]">
+          <div className="mt-8 sm:mt-12 flex flex-col items-center justify-between gap-3 sm:gap-4 border-t border-white/10 pt-6 sm:pt-8 sm:flex-row">
+            <p className="text-[12px] sm:text-[13px] text-[var(--dark-text-muted)]">
               &copy; {currentYear} {company.name}. All rights reserved.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 sm:gap-4">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
+              <span className="font-mono text-[10px] sm:text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
                 All Systems Operational
               </span>
             </div>
-            <p className="font-mono text-[12px] text-[var(--dark-text-muted)]">
+            <p className="font-mono text-[10px] sm:text-[12px] text-[var(--dark-text-muted)]">
               GST: {company.gst}
             </p>
           </div>

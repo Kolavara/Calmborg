@@ -27,11 +27,11 @@ interface ChatMessage {
 /* ─── Typing dots animation ─── */
 function TypingIndicator() {
   return (
-    <div className="flex items-start gap-3 px-5 py-3">
-      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--accent)] shadow-[0_0_8px_rgba(255,71,87,0.4)]">
-        <Bot size={16} className="text-white" />
+    <div className="flex items-start gap-2 sm:gap-3 px-3 sm:px-5 py-1.5 sm:py-3">
+      <div className="flex h-6 w-6 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--accent)] shadow-[0_0_8px_rgba(255,71,87,0.4)]">
+        <Bot size={12} className="sm:size-[16px] text-white" />
       </div>
-      <div className="flex items-center gap-1.5 rounded-2xl rounded-tl-sm bg-[var(--muted)] px-4 py-3 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.05)]">
+      <div className="flex items-center gap-1.5 rounded-2xl rounded-tl-sm bg-[var(--muted)] px-3 sm:px-4 py-2 sm:py-3 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.05)]">
         <span className="h-2 w-2 animate-bounce rounded-full bg-[var(--text-muted)] [animation-delay:0ms]" />
         <span className="h-2 w-2 animate-bounce rounded-full bg-[var(--text-muted)] [animation-delay:150ms]" />
         <span className="h-2 w-2 animate-bounce rounded-full bg-[var(--text-muted)] [animation-delay:300ms]" />
@@ -221,23 +221,23 @@ export default function AIChat() {
 
       {/* Chat Panel */}
       <div
-        className={`fixed bottom-0 right-0 z-50 flex w-full flex-col bg-[var(--background)] shadow-[-8px_0_32px_rgba(0,0,0,0.15)] transition-all duration-300 sm:bottom-6 sm:right-6 sm:w-[420px] sm:rounded-2xl sm:border sm:border-[var(--border-light)]/20 ${
+        className={`fixed bottom-0 right-0 z-50 flex w-full flex-col bg-[var(--background)] shadow-[-8px_0_32px_rgba(0,0,0,0.15)] transition-all duration-300 sm:bottom-6 sm:right-6 sm:w-[420px] sm:rounded-2xl sm:border sm:border-[var(--border-light)]/20 sm:!h-auto sm:!max-h-[85vh] ${
           isOpen
             ? "translate-y-0 opacity-100 sm:translate-x-0"
             : "pointer-events-none translate-y-4 opacity-0 sm:translate-y-8"
         }`}
-        style={{ maxHeight: isOpen ? "85vh" : "0" }}
+        style={{ maxHeight: isOpen ? "100dvh" : "0" }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* ── Header ── */}
-        <div className="flex items-center justify-between rounded-t-2xl bg-[var(--dark-bg)] px-5 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[0_0_12px_rgba(255,71,87,0.4)]">
-              <Bot size={20} className="text-white" />
+        <div className="flex items-center justify-between rounded-t-2xl bg-[var(--dark-bg)] px-4 py-3 sm:px-5 sm:py-4">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[0_0_12px_rgba(255,71,87,0.4)]">
+              <Bot size={16} className="sm:size-[20px] text-white" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-white">AI Assistant</h3>
-              <p className="flex items-center gap-1.5 font-mono text-[11px] text-green-400">
+              <h3 className="text-xs sm:text-sm font-bold text-white">AI Assistant</h3>
+              <p className="flex items-center gap-1.5 font-mono text-[10px] sm:text-[11px] text-green-400">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
@@ -248,26 +248,26 @@ export default function AIChat() {
           </div>
           <button
             onClick={() => setIsOpen(false)}
-            className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition-colors hover:bg-white/10 hover:text-white"
+            className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition-colors hover:bg-white/10 hover:text-white"
           >
-            <X size={16} />
+            <X size={14} className="sm:size-[16px]" />
           </button>
         </div>
 
         {/* ── Messages ── */}
-        <div className="flex-1 overflow-y-auto" style={{ maxHeight: "55vh" }}>
+        <div className="flex-1 overflow-y-auto" style={{ maxHeight: "calc(100dvh - 140px)" }}>
           {messages.length === 0 ? (
-            <div className="flex h-full flex-col items-center justify-center px-6 py-12 text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--dark-bg)] shadow-[var(--shadow-card)]">
+            <div className="flex h-full flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-12 text-center">
+              <div className="mb-4 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-[var(--dark-bg)] shadow-[var(--shadow-card)]">
                 <MessageSquare
-                  size={28}
-                  className="text-[var(--accent)]"
+                  size={20}
+                  className="sm:size-[28px] text-[var(--accent)]"
                 />
               </div>
-              <h4 className="mb-2 text-base font-bold text-[var(--foreground)]">
+              <h4 className="mb-2 text-sm sm:text-base font-bold text-[var(--foreground)]">
                 Need Tooling Advice?
               </h4>
-              <p className="mb-6 max-w-xs text-[13px] leading-relaxed text-[var(--text-muted)]">
+              <p className="mb-6 max-w-xs text-[12px] sm:text-[13px] leading-relaxed text-[var(--text-muted)]">
                 Ask me anything about cutting tools, tool holders, inserts, or
                 machining best practices.
               </p>
@@ -278,7 +278,7 @@ export default function AIChat() {
                   <button
                     key={s}
                     onClick={() => sendMessage(s)}
-                    className="rounded-xl bg-[var(--muted)] px-4 py-2.5 text-[12px] text-[var(--text-muted)] shadow-[var(--shadow-card)] transition-all hover:bg-[var(--accent)] hover:text-white hover:shadow-[0_0_12px_rgba(255,71,87,0.3)]"
+                    className="rounded-xl bg-[var(--muted)] px-3 py-2 sm:px-4 sm:py-2.5 text-[11px] sm:text-[12px] text-[var(--text-muted)] shadow-[var(--shadow-card)] transition-all hover:bg-[var(--accent)] hover:text-white hover:shadow-[0_0_12px_rgba(255,71,87,0.3)]"
                   >
                     {s}
                   </button>
@@ -286,32 +286,32 @@ export default function AIChat() {
               </div>
             </div>
           ) : (
-            <div className="space-y-1 py-4">
+            <div className="space-y-1 py-3 sm:py-4">
               {messages.map((msg, i) => (
                 <div
                   key={i}
-                  className={`flex items-start gap-3 px-5 py-2 ${
+                  className={`flex items-start gap-2 sm:gap-3 px-3 sm:px-5 py-1.5 sm:py-2 ${
                     msg.role === "user" ? "flex-row-reverse" : ""
                   }`}
                 >
                   {/* Avatar */}
                   <div
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${
+                    className={`flex h-6 w-6 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg ${
                       msg.role === "user"
                         ? "bg-[var(--dark-bg)]"
                         : "bg-[var(--accent)] shadow-[0_0_8px_rgba(255,71,87,0.4)]"
                     }`}
                   >
                     {msg.role === "user" ? (
-                      <User size={16} className="text-white" />
+                      <User size={12} className="sm:size-[16px] text-white" />
                     ) : (
-                      <Bot size={16} className="text-white" />
+                      <Bot size={12} className="sm:size-[16px] text-white" />
                     )}
                   </div>
 
                   {/* Bubble */}
                   <div
-                    className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-[14px] leading-relaxed ${
+                    className={`max-w-[85%] rounded-2xl px-3 py-2 sm:px-4 sm:py-2.5 text-[13px] sm:text-[14px] leading-relaxed ${
                       msg.role === "user"
                         ? "rounded-tr-sm bg-[var(--dark-bg)] text-white shadow-[2px_2px_6px_rgba(0,0,0,0.2)]"
                         : "rounded-tl-sm bg-[var(--muted)] text-[var(--foreground)] shadow-[inset_1px_1px_2px_rgba(255,255,255,0.5)]"
@@ -322,7 +322,7 @@ export default function AIChat() {
                         {formatResponse(msg.content)}
                       </div>
                     ) : (
-                      <p className="text-[14px]">{msg.content}</p>
+                      <p className="text-[13px] sm:text-[14px]">{msg.content}</p>
                     )}
                   </div>
                 </div>
@@ -336,8 +336,8 @@ export default function AIChat() {
 
         {/* ── Error banner ── */}
         {error && !isLoading && (
-          <div className="mx-5 mb-2 flex items-center gap-2 rounded-xl bg-red-500/10 px-4 py-2.5 text-[12px] text-red-600">
-            <AlertCircle size={14} className="shrink-0" />
+          <div className="mx-4 sm:mx-5 mb-2 flex items-center gap-2 rounded-xl bg-red-500/10 px-3 py-2 sm:px-4 sm:py-2.5 text-[11px] sm:text-[12px] text-red-600">
+            <AlertCircle size={12} className="sm:size-[14px] shrink-0" />
             <span>
               Connection issue. Check your API key or try again.
             </span>
@@ -345,7 +345,7 @@ export default function AIChat() {
         )}
 
         {/* ── Input ── */}
-        <div className="border-t border-[var(--border-dark)]/10 px-4 py-4">
+        <div className="border-t border-[var(--border-dark)]/10 px-3 py-3 sm:px-4 sm:py-4">
           <form onSubmit={handleSubmit} className="flex items-center gap-2">
             <div className="relative flex-1">
               <input
@@ -356,22 +356,22 @@ export default function AIChat() {
                 onKeyDown={handleKeyDown}
                 placeholder="Ask about tooling..."
                 disabled={isLoading}
-                className="w-full rounded-xl border border-[var(--border-dark)]/20 bg-[var(--panel)] px-4 py-3 pr-10 text-[14px] text-[var(--foreground)] placeholder:text-[var(--text-muted)] shadow-[inset_2px_2px_4px_rgba(0,0,0,0.05)] outline-none transition-all focus:border-[var(--accent)]/50 focus:ring-2 focus:ring-[var(--accent)]/20 disabled:opacity-50"
+                className="w-full rounded-xl border border-[var(--border-dark)]/20 bg-[var(--panel)] px-3 py-2.5 sm:px-4 sm:py-3 pr-8 sm:pr-10 text-[13px] sm:text-[14px] text-[var(--foreground)] placeholder:text-[var(--text-muted)] shadow-[inset_2px_2px_4px_rgba(0,0,0,0.05)] outline-none transition-all focus:border-[var(--accent)]/50 focus:ring-2 focus:ring-[var(--accent)]/20 disabled:opacity-50"
               />
             </div>
             <button
               type="submit"
               disabled={!input.trim() || isLoading}
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)] transition-all hover:bg-[var(--accent-hover)] disabled:cursor-not-allowed disabled:opacity-40"
+              className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)] transition-all hover:bg-[var(--accent-hover)] disabled:cursor-not-allowed disabled:opacity-40"
             >
               {isLoading ? (
-                <Loader size={18} className="animate-spin" />
+                <Loader size={16} className="sm:size-[18px] animate-spin" />
               ) : (
-                <Send size={18} />
+                <Send size={16} className="sm:size-[18px]" />
               )}
             </button>
           </form>
-          <p className="mt-2 text-center font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+          <p className="mt-1.5 sm:mt-2 text-center font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
             Powered by Groq AI
           </p>
         </div>

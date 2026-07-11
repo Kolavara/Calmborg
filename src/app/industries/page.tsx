@@ -41,11 +41,11 @@ export default function IndustriesPage() {
                 Industries We Serve
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)] sm:text-5xl lg:text-6xl">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)]">
               Precision Tooling for{" "}
               <span className="text-[var(--accent)]">Every Sector</span>
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+            <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-[var(--text-muted)]">
               From automotive and aerospace to medical devices and general
               engineering, our tooling solutions are trusted across the
               manufacturing spectrum.
@@ -71,21 +71,21 @@ export default function IndustriesPage() {
                   <div className="absolute left-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
                   <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 
-                  <div className={`relative grid gap-8 md:grid-cols-2 md:items-center ${isEven ? "" : "md:[direction:rtl]"}`}>
+                  <div className={`relative grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center ${isEven ? "" : "md:[direction:rtl]"}`}>
                     {/* Content */}
                     <div className={isEven ? "" : "md:[direction:ltr]"}>
-                      <div className="mb-4 flex items-center gap-4">
-                        <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
-                          <Icon size={28} className="text-white" />
+                      <div className="mb-3 sm:mb-4 flex items-center gap-3 sm:gap-4">
+                        <div className="flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
+                          <Icon size={20} className="sm:size-[28px] text-white" />
                         </div>
                         <div>
-                          <h2 className="text-2xl font-extrabold text-[var(--foreground)]">
+                          <h2 className="text-lg sm:text-2xl font-extrabold text-[var(--foreground)]">
                             {ind.title}
                           </h2>
                         </div>
                       </div>
 
-                      <p className="mb-6 max-w-lg text-base leading-relaxed text-[var(--text-muted)]">
+                      <p className="mb-4 sm:mb-6 max-w-lg text-sm sm:text-base leading-relaxed text-[var(--text-muted)]">
                         {ind.description}
                       </p>
 
@@ -99,11 +99,10 @@ export default function IndustriesPage() {
                     </div>
 
                     {/* Applications Grid */}
-                    <div className={`${isEven ? "" : "md:[direction:ltr]"}`}>
-                      <h4 className="mb-4 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
-                        Key Applications
-                      </h4>
-                      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+                    <div className={`${isEven ? "" : "md:[direction:ltr]"}`}>                        <h4 className="mb-3 sm:mb-4 font-mono text-[11px] sm:text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                          Key Applications
+                        </h4>
+                      <div className="grid grid-cols-2 gap-1.5 sm:gap-2 sm:grid-cols-3">
                         {ind.applications.map((app) => (
                           <div
                             key={app}

@@ -56,11 +56,11 @@ export default function ProductsPage() {
                 Product Catalogue
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)] sm:text-5xl lg:text-6xl">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)]">
               Complete Tooling Solutions for{" "}
               <span className="text-[var(--accent)]">CNC Manufacturing</span>
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+            <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-[var(--text-muted)]">
               We offer a comprehensive portfolio of cutting tools and accessories
               designed to improve machining performance, productivity, and tool
               life.
@@ -72,20 +72,20 @@ export default function ProductsPage() {
       {/* ═══════════════ SEARCH & FILTERS ═══════════════ */}
       <section className="relative pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-background p-6 shadow-[var(--shadow-card)]">
-            <div className="flex flex-col gap-6">
+          <div className="rounded-2xl bg-background p-4 sm:p-6 shadow-[var(--shadow-card)]">
+            <div className="flex flex-col gap-4 sm:gap-6">
               {/* Search */}
               <div className="relative w-full">
                 <Search
-                  size={18}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
+                  size={16}
+                  className="sm:size-[18px] absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
                 />
                 <input
                   type="text"
                   placeholder="Search tools, products, or categories..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full rounded-xl bg-background py-4 pl-12 pr-4 font-mono text-base text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/60 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                  className="w-full rounded-xl bg-background py-3 sm:py-4 pl-10 sm:pl-12 pr-3 sm:pr-4 font-mono text-sm sm:text-base text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/60 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                 />
               </div>
 
@@ -103,18 +103,18 @@ export default function ProductsPage() {
                   )}
                 </div>
                 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-6 sm:gap-y-8">
                   {mainCategories.filter(cat => cat !== "All").map(mainCat => (
-                    <div key={mainCat} className="flex flex-col gap-3">
-                      <h4 className="font-sans text-[15px] font-bold uppercase tracking-widest text-[var(--foreground)] pb-2 border-b border-[var(--border-shadow)]/20">
+                    <div key={mainCat} className="flex flex-col gap-2 sm:gap-3">
+                      <h4 className="font-sans text-[13px] sm:text-[15px] font-bold uppercase tracking-widest text-[var(--foreground)] pb-1.5 sm:pb-2 border-b border-[var(--border-shadow)]/20">
                         {mainCat}
                       </h4>
-                      <ul className="flex flex-col gap-2">
+                      <ul className="flex flex-col gap-1.5 sm:gap-2">
                         {productCategories.filter(c => c.mainCategory === mainCat).map((cat) => (
                           <li key={cat.id}>
                             <button
                               onClick={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
-                              className={`text-left text-sm transition-all ${
+                              className={`text-left text-xs sm:text-sm transition-all ${
                                 activeCategory === cat.id
                                   ? "text-[var(--accent)] font-bold translate-x-1"
                                   : "text-[var(--text-muted)] hover:text-[var(--accent)] hover:translate-x-1"
@@ -285,7 +285,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                 Products
               </h4>
               {category.productItems && category.productItems.length > 0 ? (
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {category.productItems.map((item) => (
                     <Link
                       href={`/products/${item.slug}`}
@@ -294,7 +294,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                     >
                       {/* Product Image */}
                       {item.image ? (
-                        <div className="relative h-40 overflow-hidden bg-white">
+                        <div className="relative h-32 sm:h-40 overflow-hidden bg-white">
                           <img
                             src={item.image}
                             alt={item.name}
@@ -306,21 +306,21 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                             }}
                           />
                           <div className="hidden absolute inset-0 flex items-center justify-center bg-[var(--muted)]">
-                            <Image size={32} className="text-[var(--text-muted)]" />
+                            <Image size={24} className="sm:size-[32px] text-[var(--text-muted)]" />
                           </div>
                         </div>
                       ) : (
-                        <div className="flex h-40 items-center justify-center bg-[var(--muted)]">
-                          <Image size={32} className="text-[var(--text-muted)]" />
+                        <div className="flex h-32 sm:h-40 items-center justify-center bg-[var(--muted)]">
+                          <Image size={24} className="sm:size-[32px] text-[var(--text-muted)]" />
                         </div>
                       )}
                       {/* Product Info */}
-                      <div className="p-3">
-                        <h5 className="text-sm font-bold text-[var(--foreground)] leading-tight group-hover:text-[var(--accent)] transition-colors">
+                      <div className="p-2.5 sm:p-3">
+                        <h5 className="text-xs sm:text-sm font-bold text-[var(--foreground)] leading-tight group-hover:text-[var(--accent)] transition-colors">
                           {item.name}
                         </h5>
                         {item.shortDescription && (
-                          <p className="mt-1 text-sm text-[var(--text-muted)] leading-snug line-clamp-2">
+                          <p className="mt-1 text-xs sm:text-sm text-[var(--text-muted)] leading-snug line-clamp-2">
                             {item.shortDescription}
                           </p>
                         )}

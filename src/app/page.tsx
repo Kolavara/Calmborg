@@ -218,74 +218,68 @@ export default function Home() {
               </div>
 
               {/* Headline */}
-              <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)] sm:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)] xs:text-4xl sm:text-5xl lg:text-6xl">
                 Precision Tooling{" "}
                 <span className="text-[var(--accent)]">Solutions</span> for
                 Modern{" "}
                 <span className="relative inline-block">
                   Manufacturing
                 </span>
-                <span className="animate-blink-cursor ml-2 inline-block h-[0.85em] w-[5px] translate-y-[0.08em]" />
+                <span className="animate-blink-cursor ml-2 inline-block h-[0.85em] w-[4px] sm:w-[5px] translate-y-[0.08em]" />
               </h1>
 
               {/* Rotating subtitle */}
               <div className="h-8 overflow-hidden">
-                <div className="flex items-center gap-2 text-lg text-[var(--text-muted)]">
-                  <Settings size={18} className="text-[var(--accent)]" />
-                  <span className="font-mono text-sm uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 sm:gap-2 text-sm sm:text-lg text-[var(--text-muted)]">
+                  <Settings size={14} className="sm:size-[18px] shrink-0 text-[var(--accent)]" />
+                  <span className="font-mono text-[11px] sm:text-sm uppercase tracking-wider">
                     Specializing in
                   </span>
-                  <span className="font-semibold text-[var(--foreground)] transition-all">
+                  <span className="font-semibold text-[var(--foreground)] transition-all truncate">
                     {heroSlides[currentSlide]}
                   </span>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="max-w-lg text-base leading-relaxed text-[var(--text-muted)] lg:text-lg">
+              <p className="max-w-lg text-sm sm:text-base leading-relaxed text-[var(--text-muted)] lg:text-lg">
                 {companyProfile.description.split("\n")[0]}
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col gap-4 sm:flex-row">
+              <div className="flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/products"
-                  className="group flex items-center justify-center gap-2 rounded-xl bg-[var(--accent)] px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-[4px_4px_12px_rgba(255,71,87,0.35),-4px_-4px_12px_rgba(255,100,110,0.35)] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.2)]"
+                  className="group flex items-center justify-center gap-2 rounded-xl bg-[var(--accent)] px-6 py-3.5 sm:px-8 sm:py-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-[4px_4px_12px_rgba(255,71,87,0.35),-4px_-4px_12px_rgba(255,100,110,0.35)] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.2)]"
                 >
                   Explore Products
                   <ArrowRight
-                    size={16}
-                    className="transition-transform group-hover:translate-x-1"
+                    size={14}
+                    className="sm:size-[16px] transition-transform group-hover:translate-x-1"
                   />
                 </Link>
                 <Link
                   href="/contact#rfq"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--muted)] px-8 py-4 text-sm font-bold uppercase tracking-wider text-[var(--foreground)] shadow-[var(--shadow-card)] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[var(--shadow-pressed)]"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[var(--muted)] px-6 py-3.5 sm:px-8 sm:py-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-[var(--foreground)] shadow-[var(--shadow-card)] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[var(--shadow-pressed)]"
                 >
                   Request a Quote
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} className="sm:size-[16px]" />
                 </Link>
               </div>
 
               {/* Trust Indicators */}
-              <div className="flex flex-wrap items-center gap-6 text-[13px] text-[var(--text-muted)]">
-                <div className="flex items-center gap-2">
-                  <Award size={14} className="text-[var(--accent)]" />
-                  <span className="font-mono uppercase tracking-wider">
-                    30+ Years
-                  </span>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] sm:text-[13px] text-[var(--text-muted)]">
+                <div className="flex items-center gap-1.5">
+                  <Award size={12} className="sm:size-[14px] text-[var(--accent)]" />
+                  <span className="font-mono uppercase tracking-wider">30+ Years</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Shield size={14} className="text-[var(--accent)]" />
-                  <span className="font-mono uppercase tracking-wider">
-                    Genuine Products
-                  </span>
+                <div className="flex items-center gap-1.5">
+                  <Shield size={12} className="sm:size-[14px] text-[var(--accent)]" />
+                  <span className="font-mono uppercase tracking-wider">Genuine Products</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Clock size={14} className="text-[var(--accent)]" />
-                  <span className="font-mono uppercase tracking-wider">
-                    Quick Delivery
-                  </span>
+                <div className="flex items-center gap-1.5">
+                  <Clock size={12} className="sm:size-[14px] text-[var(--accent)]" />
+                  <span className="font-mono uppercase tracking-wider">Quick Delivery</span>
                 </div>
               </div>
             </div>
@@ -404,11 +398,11 @@ export default function Home() {
       {/* ═══════════════ STATS BAR ═══════════════ */}
       <section className="relative py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-[var(--dark-bg)] p-8 md:p-12 shadow-[var(--shadow-card)] carbon-fiber relative overflow-hidden">
+          <div className="rounded-2xl bg-[var(--dark-bg)] p-5 sm:p-8 md:p-12 shadow-[var(--shadow-card)] carbon-fiber relative overflow-hidden">
             {/* Scanline overlay */}
             <div className="absolute inset-0 scanlines opacity-20" />
             
-            <div className="relative grid grid-cols-2 gap-8 md:grid-cols-4">
+            <div className="relative grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
               {stats.map((stat, i) => (
                 <AnimatedStat
                   key={stat.label}
@@ -424,18 +418,18 @@ export default function Home() {
       </section>
 
       {/* ═══════════════ WHY CHOOSE US ═══════════════ */}
-      <section className="relative py-16 md:py-24">
+      <section className="relative py-12 sm:py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
+          <div className="mb-8 sm:mb-12 text-center">
+            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-3 py-1 sm:px-4 sm:py-1.5 font-mono text-[11px] sm:text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
               Why Calm Borg
             </span>
-            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">
+            <h2 className="mb-3 text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)]">
               Trusted by{" "}
               <span className="text-[var(--accent)]">200+</span> Manufacturers
             </h2>
-            <p className="mx-auto max-w-2xl text-base text-[var(--text-muted)]">
+            <p className="mx-auto max-w-2xl text-sm sm:text-base text-[var(--text-muted)]">
               {companyProfile.mission}
             </p>
           </div>

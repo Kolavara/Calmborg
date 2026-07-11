@@ -56,11 +56,11 @@ export default function ContactPage() {
                 Contact Us
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)] sm:text-5xl lg:text-6xl">
+            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-[var(--foreground)]">
               Let&apos;s Discuss Your{" "}
               <span className="text-[var(--accent)]">Tooling Needs</span>
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+            <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-[var(--text-muted)]">
               Send us your component drawing, material details, and machine
               information to receive expert tooling recommendations.
             </p>
@@ -71,7 +71,7 @@ export default function ContactPage() {
       {/* ═══════════════ CONTACT INFO CARDS ═══════════════ */}
       <section className="relative pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {[
               {
                 icon: Phone,
@@ -109,16 +109,16 @@ export default function ContactPage() {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  className="group flex items-center gap-4 rounded-2xl bg-[var(--background)] p-5 shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-floating)]"
+                  className="group flex items-center gap-3 sm:gap-4 rounded-2xl bg-[var(--background)] p-4 sm:p-5 shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-floating)]"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
-                    <Icon size={20} className="text-white" />
+                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--accent)] shadow-[3px_3px_8px_rgba(255,71,87,0.3)]">
+                    <Icon size={16} className="sm:size-[20px] text-white" />
                   </div>
                   <div>
-                    <div className="font-mono text-[12px] uppercase tracking-widest text-[var(--text-muted)]">
+                    <div className="font-mono text-[11px] sm:text-[12px] uppercase tracking-widest text-[var(--text-muted)]">
                       {item.label}
                     </div>
-                    <div className="text-sm font-bold text-[var(--foreground)]">
+                    <div className="text-xs sm:text-sm font-bold text-[var(--foreground)]">
                       {item.value}
                     </div>
                   </div>

@@ -84,6 +84,7 @@ export interface ProductItem {
 }
 
 export interface ProductCategory {
+  mainCategory?: string;
   id: string;
   slug: string;
   title: string;
@@ -103,7 +104,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "solid-carbide",
     slug: "solid-carbide-cutting-tools",
-    title: "Solid Carbide End Mills",
+    title: "Solid Carbide End Mills", 
+  mainCategory: "Cutting Tools",
     subtitle: "Union Tool Japan precision end mills",
     description: "Premium solid carbide cutting tools from Union Tool Japan, engineered for maximum precision, extended tool life, and superior surface finish across all machining applications.",
     brand: "Union Tool",
@@ -400,7 +402,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "tool-holding",
     slug: "tool-holding-systems",
-    title: "Tool Holders",
+    title: "Tool Holders", 
+  mainCategory: "Tool Holders",
     subtitle: "Showa & MST precision tool holders",
     description: "Precision tool holding systems from Showa and MST (Japan) for maximum runout accuracy, rigidity, and machining performance.",
     brand: "Showa & MST",
@@ -532,7 +535,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "die-mold",
     slug: "die-mold-tooling",
-    title: "Inserts for Die Mold",
+    title: "Inserts for Die Mold", 
+  mainCategory: "Cutting Tools",
     subtitle: "Aura precision inserts for die and mold applications",
     description: "Specialized tooling solutions for die and mold making, including precision inserts from Aura Germany for hardened steel machining and complex contouring.",
     brand: "Aura",
@@ -650,7 +654,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "shrink-fit",
     slug: "shrink-fit-holders",
-    title: "Shrink-Fit Holders",
+    title: "Shrink-Fit Holders", 
+  mainCategory: "Tool Holders",
     subtitle: "MST Japan ultra-precision shrink fit technology",
     description: "Advanced shrink fit holding systems from MST Japan providing maximum runout accuracy and rigidity for high-speed machining operations.",
     brand: "MST",
@@ -736,7 +741,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "tapping",
     slug: "hss-carbide-taps",
-    title: "HSS & Carbide Taps",
+    title: "HSS & Carbide Taps", 
+  mainCategory: "Cutting Tools",
     subtitle: "Yamawa (Japan) premium tapping solutions",
     description: "Complete range of high-performance taps from Yamawa Japan for precision thread cutting in all materials including stainless steel and hardened metals.",
     brand: "Yamawa",
@@ -855,7 +861,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "holder-balancing",
     slug: "holder-balancing-machine",
-    title: "Holder Balancing Machine",
+    title: "Holder Balancing Machine", 
+  mainCategory: "Accessories",
     subtitle: "Schussler Germany intelligent balancing technology",
     description: "Intelligent tool holder balancing machines from Schussler Germany for vibration reduction and spindle protection.",
     brand: "Schüssler",
@@ -886,7 +893,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "vices",
     slug: "manual-pneumatic-hydraulic-vice",
-    title: "Vice ( M|N|H )",
+    title: "Vice ( M|N|H )", 
+  mainCategory: "Work Holding System",
     subtitle: "Precision vices for secure workholding",
     description: "High-precision machine vices in M, N, and H series for secure and accurate workpiece clamping in milling, drilling, and grinding operations.",
     brand: "Calm Borg",
@@ -919,7 +927,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "edm-tooling",
     slug: "edm-tooling-systems",
-    title: "EDM Tooling System",
+    title: "EDM Tooling System", 
+  mainCategory: "Work Holding System",
     subtitle: "Erowa precision EDM electrode & workpiece holding",
     description: "Precision EDM tooling and electrode holding systems from Erowa for electrical discharge machining operations.",
     brand: "EROWA",
@@ -950,7 +959,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "rotary-tables",
     slug: "cnc-rotary-tables",
-    title: "Rotary Table",
+    title: "Rotary Table", 
+  mainCategory: "Accessories",
     subtitle: "Nikken Japan precision rotary table systems",
     description: "Precision CNC rotary tables from Nikken Japan for 4th and 5-axis machining operations with high positioning accuracy.",
     brand: "Nikken",
@@ -982,7 +992,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "angle-heads",
     slug: "angle-heads",
-    title: "Angle Head",
+    title: "Angle Head", 
+  mainCategory: "Tool Holders",
     subtitle: "MST Japan precision angle heads for angular machining",
     description: "Precision angle heads from MST Japan enabling machining at various angles without repositioning the workpiece.",
     brand: "MST",
@@ -1013,7 +1024,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "micro-boring",
     slug: "micro-boring-heads",
-    title: "Micro Boring Head",
+    title: "Micro Boring Head", 
+  mainCategory: "Tool Holders",
     subtitle: "Ultra-precision boring for fine finishing operations",
     description: "Micro boring heads for ultra-precision internal diameter boring with adjustable boring diameters and micron-level accuracy.",
     brand: "MST",
@@ -1047,7 +1059,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "work-holders-5-axis",
     slug: "work-holders-5-axis",
-    title: "Work Holders 5-axis",
+    title: "Work Holders 5-axis", 
+  mainCategory: "Work Holding System",
     subtitle: "Smartgrip precision workholding for 5-axis machining",
     description: "Advanced workholding systems including Smartgrip for 5-axis machines, precision vises, and custom clamping solutions.",
     brand: "MST",
@@ -1127,7 +1140,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "boring-holders",
     slug: "boring-holders",
-    title: "Boring Holders",
+    title: "Boring Holders", 
+  mainCategory: "Tool Holders",
     subtitle: "Roughing & finishing boring solutions",
     description: "Precision boring holders for both roughing and finishing operations, providing accurate internal diameter machining with excellent surface finish.",
     brand: "Showa",
@@ -1162,7 +1176,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "magnetic-beds",
     slug: "magnetic-beds-lifts",
-    title: "Magnetic Beds & Lifts",
+    title: "Magnetic Beds & Lifts", 
+  mainCategory: "Work Holding System",
     subtitle: "Magnetic workholding and lifting solutions",
     description: "Magnetic beds and lifting systems for secure workholding and safe material handling in grinding, milling, and heavy machining operations.",
     brand: "Shinji",
@@ -1194,7 +1209,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "pencil-grinders",
     slug: "electric-pencil-hand-grinders",
-    title: "Electric Pencil Hand Grinders",
+    title: "Electric Pencil Hand Grinders", 
+  mainCategory: "Accessories",
     subtitle: "Precision hand grinding for deburring and finishing",
     description: "Electric pencil hand grinders for precision deburring, chamfering, and finishing operations. Compact design for access to tight spaces.",
     brand: "Leutor",
@@ -1229,7 +1245,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "wire-cut-edm",
     slug: "wire-cut-edm-fixtures",
-    title: "Wire Cut EDM Fixtures",
+    title: "Wire Cut EDM Fixtures", 
+  mainCategory: "Work Holding System",
     subtitle: "Precision workholding for wire EDM machines",
     description: "Precision fixtures and workholding systems designed specifically for wire electrical discharge machining (EDM) operations.",
     brand: "MST",
@@ -1263,7 +1280,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "measuring-probing",
     slug: "measuring-probing-systems",
-    title: "Measuring Touch Probes",
+    title: "Measuring Touch Probes", 
+  mainCategory: "Measuring Touch Probes",
     subtitle: "Blum Novotest touch probes and measuring equipment",
     description: "Precision measuring and probing systems for in-process measurement, tool setting, and quality control.",
     brand: "Blum Novotest",
@@ -1356,7 +1374,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "indexable-milling",
     slug: "indexable-milling-tools",
-    title: "Indexable Milling Tools",
+    title: "Indexable Milling Tools", 
+  mainCategory: "Cutting Tools",
     subtitle: "Maximum productivity for heavy-duty machining",
     description: "Indexable milling systems designed for high metal removal rates, reduced machining costs, and excellent surface finish in demanding applications.",
     brand: "Calm Borg",
@@ -1454,7 +1473,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "turning",
     slug: "turning-tools",
-    title: "Turning Tools",
+    title: "Turning Tools", 
+  mainCategory: "Cutting Tools",
     subtitle: "Precision solutions for CNC turning centers",
     description: "Comprehensive range of turning tools, holders, and inserts for all CNC turning, boring, grooving, and threading operations.",
     brand: "Calm Borg",
@@ -1567,7 +1587,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "cutting-inserts",
     slug: "cutting-inserts",
-    title: "Cutting Inserts",
+    title: "Cutting Inserts", 
+  mainCategory: "Cutting Tools",
     subtitle: "Premium carbide grades for superior performance",
     description: "Wide range of cutting inserts for turning, milling, drilling, grooving, and threading in various carbide grades and coatings.",
     brand: "Calm Borg",
@@ -1663,7 +1684,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "cnc-accessories",
     slug: "cnc-accessories",
-    title: "CNC Accessories",
+    title: "CNC Accessories", 
+  mainCategory: "Accessories",
     subtitle: "Complete range of machining accessories",
     description: "Comprehensive range of CNC accessories including collets, pull studs, tool storage, and setup equipment for efficient machining operations.",
     productItems: [
@@ -1737,7 +1759,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: "hydraulic-chucks",
     slug: "hydraulic-chucks",
-    title: "Hydraulic Chucks",
+    title: "Hydraulic Chucks", 
+  mainCategory: "Tool Holders",
     subtitle: "Ushinka Japan high-precision hydraulic chuck systems",
     description: "High quality and precision hydraulic chucks from Ushinka Corporation, Japan. Superior clamping force with excellent runout accuracy for demanding machining applications.",
     brand: "Ushinka",

@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 
 export default function ProductsPage() {
+  const [activeMainCategory, setActiveMainCategory] = useState<string>("All");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 

@@ -33,8 +33,7 @@ export default function ProductsPage() {
         p.toLowerCase().includes(searchQuery.toLowerCase())
       );
     
-    // @ts-ignore
-    const matchesMainCategory = activeMainCategory === "All" || cat.mainCategory === activeMainCategory;
+    const matchesMainCategory = true;
     const matchesCategory =
       activeCategory === null || cat.id === activeCategory;
     return matchesSearch && matchesMainCategory && matchesCategory;
@@ -90,55 +89,45 @@ export default function ProductsPage() {
                 />
               </div>
 
-              {/* Main Category Tabs */}
-              <div className="flex flex-wrap gap-2 pb-4 border-b border-[var(--border-shadow)]/30">
-                {mainCategories.map((mainCat) => (
-                  <button
-                    key={mainCat}
-                    onClick={() => {
-                      setActiveMainCategory(mainCat);
-                      setActiveCategory(null);
-                    }}
-                    className={`rounded-lg px-5 py-3 font-sans text-sm font-bold tracking-wide transition-all ${
-                      activeMainCategory === mainCat
-                        ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
-                        : "bg-[var(--background)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
-                    }`}
-                  >
-                    {mainCat}
-                  </button>
-                ))}
-              </div>
-
-              {/* Sub Category Filter */}
-              <div className="flex flex-wrap gap-2 pt-2">
-                <button
-                  onClick={() => setActiveCategory(null)}
-                  className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
-                    activeCategory === null
-                      ? "bg-[var(--dark-surface)] text-white shadow-[2px_2px_6px_rgba(0,0,0,0.3)]"
-                      : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
-                  }`}
-                >
-                  All {activeMainCategory !== "All" ? activeMainCategory : "Products"}
-                </button>
-                {visibleSubCategories.map((cat) => (
-                  <button
-                    key={cat.id}
-                    onClick={() =>
-                      setActiveCategory(
-                        activeCategory === cat.id ? null : cat.id
-                      )
-                    }
-                    className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
-                      activeCategory === cat.id
-                        ? "bg-[var(--dark-surface)] text-white shadow-[2px_2px_6px_rgba(0,0,0,0.3)]"
-                        : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
-                    }`}
-                  >
-                    {cat.title}
-                  </button>
-                ))}
+              {/* Mega Menu Grid */}
+              <div className="pt-6">
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="font-sans text-lg font-extrabold text-[var(--foreground)] tracking-tight">Categories</h3>
+                  {activeCategory && (
+                    <button
+                      onClick={() => setActiveCategory(null)}
+                      className="text-xs font-bold text-[var(--accent)] hover:underline uppercase tracking-wider"
+                    >
+                      Clear Filter
+                    </button>
+                  )}
+                </div>
+                
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-8">
+                  {mainCategories.filter(cat => cat !== "All").map(mainCat => (
+                    <div key={mainCat} className="flex flex-col gap-3">
+                      <h4 className="font-sans text-[13px] font-bold uppercase tracking-widest text-[var(--foreground)] pb-2 border-b border-[var(--border-shadow)]/20">
+                        {mainCat}
+                      </h4>
+                      <ul className="flex flex-col gap-2">
+                        {productCategories.filter(c => c.mainCategory === mainCat).map((cat) => (
+                          <li key={cat.id}>
+                            <button
+                              onClick={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
+                              className={`text-left text-sm transition-all ${
+                                activeCategory === cat.id
+                                  ? "text-[var(--accent)] font-bold translate-x-1"
+                                  : "text-[var(--text-muted)] hover:text-[var(--foreground)] hover:translate-x-1"
+                              }`}
+                            >
+                              {cat.title}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

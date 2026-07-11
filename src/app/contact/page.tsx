@@ -199,7 +199,7 @@ export default function ContactPage() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                         <input
                           type="text"
@@ -207,7 +207,7 @@ export default function ContactPage() {
                           placeholder="Company Name"
                           value={formData.company}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                         <input
                           type="email"
@@ -216,7 +216,7 @@ export default function ContactPage() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                         <input
                           type="tel"
@@ -225,7 +225,7 @@ export default function ContactPage() {
                           required
                           value={formData.phone}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                       </div>
                     </div>
@@ -240,7 +240,7 @@ export default function ContactPage() {
                           name="product"
                           value={formData.product}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         >
                           <option value="">Product Category</option>
                           <option value="solid-carbide">
@@ -259,7 +259,7 @@ export default function ContactPage() {
                           placeholder="Workpiece Material"
                           value={formData.material}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                         <input
                           type="text"
@@ -267,7 +267,7 @@ export default function ContactPage() {
                           placeholder="Required Quantity"
                           value={formData.quantity}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                         <input
                           type="text"
@@ -275,7 +275,7 @@ export default function ContactPage() {
                           placeholder="Machine Type / Model"
                           value={formData.machine}
                           onChange={handleChange}
-                          className="rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                          className="rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                         />
                       </div>
                     </div>
@@ -291,7 +291,7 @@ export default function ContactPage() {
                         placeholder="Describe your requirements, tolerances, surface finish requirements, or any special instructions..."
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none resize-none"
+                        className="w-full rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none resize-none"
                       />
                     </div>
 

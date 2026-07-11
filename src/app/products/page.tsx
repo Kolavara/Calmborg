@@ -65,10 +65,10 @@ export default function ProductsPage() {
       {/* ═══════════════ SEARCH & FILTERS ═══════════════ */}
       <section className="relative pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-[var(--background)] p-6 shadow-[var(--shadow-card)]">
-            <div className="flex flex-col gap-4 md:flex-row md:items-center">
+          <div className="rounded-2xl bg-background p-6 shadow-[var(--shadow-card)]">
+            <div className="flex flex-col gap-6">
               {/* Search */}
-              <div className="relative flex-1">
+              <div className="relative w-full">
                 <Search
                   size={18}
                   className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
@@ -78,7 +78,7 @@ export default function ProductsPage() {
                   placeholder="Search tools, products, or categories..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full rounded-xl bg-[var(--background)] py-3.5 pl-12 pr-4 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                  className="w-full rounded-xl bg-background py-4 pl-12 pr-4 font-mono text-base text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/60 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                 />
               </div>
 
@@ -88,8 +88,8 @@ export default function ProductsPage() {
                   onClick={() => setActiveCategory(null)}
                   className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
                     activeCategory === null
-                      ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
-                      : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
+                      ? "bg-accent text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
+                      : "bg-muted text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
                   }`}
                 >
                   All
@@ -98,6 +98,7 @@ export default function ProductsPage() {
                   <button
                     key={cat.id}
                     onClick={() =>
+
                       setActiveCategory(
                         activeCategory === cat.id ? null : cat.id
                       )

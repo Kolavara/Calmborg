@@ -181,7 +181,7 @@ export default function ResourcesPage() {
                   <label className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                     Material
                   </label>
-                  <select className="w-full rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none">
+                  <select className="w-full rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none">
                     <option>Steel (P)</option>
                     <option>Stainless Steel (M)</option>
                     <option>Cast Iron (K)</option>
@@ -194,7 +194,7 @@ export default function ResourcesPage() {
                   <label className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                     Operation
                   </label>
-                  <select className="w-full rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none">
+                  <select className="w-full rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none">
                     <option>Roughing</option>
                     <option>Semi-Finishing</option>
                     <option>Finishing</option>
@@ -208,7 +208,7 @@ export default function ResourcesPage() {
                   <input
                     type="number"
                     placeholder="mm"
-                    className="w-full rounded-xl bg-[var(--background)] px-4 py-3.5 font-mono text-sm text-[var(--foreground)] shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
+                    className="w-full rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] placeholder:text-[var(--text-muted)]/50 focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none"
                   />
                 </div>
               </div>

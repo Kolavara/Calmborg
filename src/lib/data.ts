@@ -429,7 +429,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "CAT Tool Holders",
         slug: "cat-tool-holders",
-        image: "/images/products/cat_tool_holder.png",
+        image: "/images/products/cat_tool_holder.jpg",
         brand: "Showa Japan",
         shortDescription: "CAT taper tool holders for Bridgeport-style and VMC machining centers",
         description: "CAT tool holders provide reliable performance for Bridgeport-style and vertical machining centers. Precision ground for accurate tool positioning and minimal runout.",
@@ -444,7 +444,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "HSK Holders",
         slug: "hsk-holders",
-        image: "/images/products/hsk_holder.png",
+        image: "/images/products/hsk_holder.jpg",
         brand: "MST Japan",
         shortDescription: "HSK hollow taper shank holders for high-speed machining",
         description: "HSK holders provide double-contact engagement (taper + face) for superior rigidity and accuracy at high speeds. Ideal for modern high-speed machining centers.",
@@ -476,7 +476,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "ER Collet Chucks",
         slug: "er-collet-chucks",
-        image: "/images/products/er_collet_chuck.png",
+        image: "/images/products/er_collet_chuck.jpg",
         shortDescription: "Universal ER collet chucks for versatile tool clamping",
         description: "Universal ER collet chucks provide flexible tool clamping for a wide range of tool shank diameters. Available in BT, CAT, and HSK taper types.",
         specifications: [
@@ -507,7 +507,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Chucks",
         slug: "milling-chucks",
-        image: "/images/products/milling_chuck.png",
+        image: "/images/products/milling_chuck.jpg",
         shortDescription: "Heavy-duty milling chucks for maximum gripping force",
         description: "Milling chucks provide exceptional gripping force for heavy-duty milling operations. The mechanical clamping system ensures secure tool holding under high cutting loads.",
         specifications: [
@@ -597,7 +597,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Finishing Inserts for Mirror Surface",
         slug: "finishing-inserts-mirror-surface",
-        image: "/images/products/milling_inserts.png",
+        image: "/images/products/milling_inserts.jpg",
         brand: "Aura Germany",
         shortDescription: "Precision finishing inserts for mirror-quality surface finish",
         description: "Specialized finishing inserts designed to achieve mirror-quality surface finish on die and mold cavities. Ultra-sharp cutting edges and optimized geometry ensure superior surface quality.",
@@ -613,7 +613,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Copy Milling Inserts",
         slug: "copy-milling-inserts",
-        image: "/images/products/milling_inserts.png",
+        image: "/images/products/milling_inserts.jpg",
         brand: "Aura Germany",
         shortDescription: "Ball nose and copy milling inserts for 3D contouring",
         description: "Copy milling inserts designed for 3D contouring and profiling operations in die and mold making. Available in various radii for different surface finish requirements.",
@@ -1091,7 +1091,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Precision Machine Vises",
         slug: "precision-machine-vises",
-        image: "/images/products/precision_machine_vise.png",
+        image: "/images/products/precision_machine_vise.jpg",
         shortDescription: "High-precision machine vises for secure workpiece clamping",
         description: "Precision machine vises provide secure and accurate workpiece clamping for a wide range of machining operations. Available in various sizes and configurations.",
         specifications: [
@@ -1106,7 +1106,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Modular Clamping Systems",
         slug: "modular-clamping-systems",
-        image: "/images/products/modular_clamping_system.png",
+        image: "/images/products/modular_clamping_system.jpg",
         shortDescription: "Flexible modular workholding for versatile setups",
         description: "Modular clamping systems provide maximum flexibility for workholding setups. The interchangeable components allow quick reconfiguration for different workpiece geometries.",
         specifications: [
@@ -1120,7 +1120,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Fixture Plates",
         slug: "fixture-plates",
-        image: "/images/products/fixture_plates.png",
+        image: "/images/products/fixture_plates.jpg",
         shortDescription: "Precision fixture plates for repeatable workholding setups",
         description: "Precision fixture plates provide a stable and accurate base for workholding. Grid patterns allow quick and repeatable positioning of clamps and fixtures.",
         specifications: [
@@ -1353,7 +1353,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Storage Systems",
         slug: "tool-storage-systems",
-        image: "/images/products/tool_storage_system.png",
+        image: "/images/products/tool_storage_system.jpg",
         shortDescription: "Organized tool storage and management systems",
         description: "Tool storage and management systems for organized storage of cutting tools, holders, and accessories. Improves workshop efficiency and tool lifecycle management.",
         specifications: [
@@ -1390,7 +1390,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Face Mills",
         slug: "face-mills",
-        image: "/images/products/face_mill.png",
+        image: "/images/products/face_mill.jpg",
         shortDescription: "Indexable face mills for high-efficiency surface milling",
         description: "Indexable face mills designed for high-efficiency surface milling operations. Available in various diameters and insert configurations for different materials and applications.",
         specifications: [
@@ -1406,7 +1406,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Shoulder Mills",
         slug: "shoulder-mills",
-        image: "/images/products/shoulder_mill.png",
+        image: "/images/products/shoulder_mill.jpg",
         shortDescription: "Indexable shoulder mills for 90┬░ shoulder milling",
         description: "Indexable shoulder mills designed for precise 90-degree shoulder milling operations. Excellent for creating step features and shoulder profiles.",
         specifications: [
@@ -1436,7 +1436,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Copy Mills",
         slug: "copy-mills",
-        image: "/images/products/copy_mill.png",
+        image: "/images/products/copy_mill.jpg",
         shortDescription: "Indexable copy mills for 3D contouring and profiling",
         description: "Indexable copy mills designed for 3D contouring and profiling operations. Available in various radii for different surface finish requirements.",
         specifications: [
@@ -1451,7 +1451,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Inserts (Various Grades)",
         slug: "milling-inserts-various-grades",
-        image: "/images/products/milling_inserts.png",
+        image: "/images/products/milling_inserts.jpg",
         shortDescription: "Wide range of milling inserts for different materials and operations",
         description: "Comprehensive range of milling inserts in various carbide grades and coatings for different materials and machining conditions.",
         specifications: [
@@ -1489,7 +1489,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "External Turning Holders",
         slug: "external-turning-holders",
-        image: "/images/products/external_turning_holder.png",
+        image: "/images/products/external_turning_holder.jpg",
         shortDescription: "Indexable external turning holders for OD turning operations",
         description: "Indexable external turning holders designed for outer diameter turning operations. Available in various shank sizes and insert configurations.",
         specifications: [
@@ -1519,7 +1519,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Grooving Tools",
         slug: "grooving-tools",
-        image: "/images/products/grooving_tool.png",
+        image: "/images/products/grooving_tool.jpg",
         shortDescription: "Indexable grooving tools for internal and external grooving",
         description: "Indexable grooving tools for both internal and external groove cutting operations. Various widths and configurations available.",
         specifications: [
@@ -1534,7 +1534,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Threading Tools",
         slug: "threading-tools",
-        image: "/images/products/threading_tool.png",
+        image: "/images/products/threading_tool.jpg",
         shortDescription: "Indexable threading tools for external and internal threading",
         description: "Indexable threading tools for producing precise internal and external threads. Available for various thread forms and pitches.",
         specifications: [
@@ -1549,7 +1549,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Parting-Off Tools",
         slug: "parting-off-tools",
-        image: "/images/products/parting_off_tool.png",
+        image: "/images/products/parting_off_tool.jpg",
         shortDescription: "Indexable parting-off tools for cut-off operations",
         description: "Indexable parting-off tools designed for efficient cut-off operations. Rigid construction ensures clean, accurate cuts.",
         specifications: [
@@ -1564,7 +1564,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Turning Inserts",
         slug: "turning-inserts",
-        image: "/images/products/turning_inserts.png",
+        image: "/images/products/turning_inserts.jpg",
         shortDescription: "Wide range of turning inserts for all materials and operations",
         description: "Comprehensive range of turning inserts in various carbide grades, geometries, and coatings for different materials and machining conditions.",
         specifications: [
@@ -1602,7 +1602,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Turning Inserts (CNGA, CNMG, TNMG, WNMG)",
         slug: "turning-inserts-cnga-cnmg",
-        image: "/images/products/turning_inserts.png",
+        image: "/images/products/turning_inserts.jpg",
         shortDescription: "Premium turning inserts for all turning operations",
         description: "Premium turning inserts in CNGA, CNMG, TNMG, and WNMG geometries. Available in multiple carbide grades and coatings for different materials and operations.",
         specifications: [
@@ -1617,7 +1617,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Inserts (APMT, SEKT, SPKT)",
         slug: "milling-inserts-apmt-sekt",
-        image: "/images/products/milling_inserts.png",
+        image: "/images/products/milling_inserts.jpg",
         shortDescription: "Premium milling inserts for face, shoulder, and copy milling",
         description: "Premium milling inserts in APMT, SEKT, and SPKT geometries for face milling, shoulder milling, and copy milling operations.",
         specifications: [
@@ -1647,7 +1647,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Grooving Inserts",
         slug: "grooving-inserts",
-        image: "/images/products/grooving_tool.png",
+        image: "/images/products/grooving_tool.jpg",
         shortDescription: "Precision grooving inserts for internal and external grooves",
         description: "Precision grooving inserts for creating internal and external grooves, recesses, and undercuts.",
         specifications: [
@@ -1662,7 +1662,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Threading Inserts",
         slug: "threading-inserts",
-        image: "/images/products/threading_tool.png",
+        image: "/images/products/threading_tool.jpg",
         shortDescription: "Precision threading inserts for various thread forms",
         description: "Precision threading inserts for producing internal and external threads in various thread forms and pitches.",
         specifications: [
@@ -1698,7 +1698,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "ER Collets",
         slug: "er-collets",
-        image: "/images/products/er_collet_chuck.png",
+        image: "/images/products/er_collet_chuck.jpg",
         shortDescription: "Precision ER collets for versatile tool clamping",
         description: "Precision ER collets provide accurate tool clamping in ER collet chuck systems. Available in various sizes for different tool shank diameters.",
         specifications: [
@@ -1727,7 +1727,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Collet Chucks",
         slug: "collet-chucks-accessories",
-        image: "/images/products/er_collet_chuck.png",
+        image: "/images/products/er_collet_chuck.jpg",
         shortDescription: "Collet chuck assemblies for various taper types",
         description: "Complete collet chuck assemblies including chuck body, nut, and spanner for various machine taper types.",
         specifications: [

@@ -429,7 +429,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "CAT Tool Holders",
         slug: "cat-tool-holders",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "/images/products/cat_tool_holder.png",
         brand: "Showa Japan",
         shortDescription: "CAT taper tool holders for Bridgeport-style and VMC machining centers",
         description: "CAT tool holders provide reliable performance for Bridgeport-style and vertical machining centers. Precision ground for accurate tool positioning and minimal runout.",
@@ -444,7 +444,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "HSK Holders",
         slug: "hsk-holders",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "/images/products/hsk_holder.png",
         brand: "MST Japan",
         shortDescription: "HSK hollow taper shank holders for high-speed machining",
         description: "HSK holders provide double-contact engagement (taper + face) for superior rigidity and accuracy at high speeds. Ideal for modern high-speed machining centers.",
@@ -475,7 +475,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "ER Collet Chucks",
         slug: "er-collet-chucks",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "/images/products/er_collet_chuck.png",
         shortDescription: "Universal ER collet chucks for versatile tool clamping",
         description: "Universal ER collet chucks provide flexible tool clamping for a wide range of tool shank diameters. Available in BT, CAT, and HSK taper types.",
         specifications: [
@@ -490,7 +490,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Hydraulic Chucks",
         slug: "hydraulic-chucks",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2025/01/Ushinka-Hydraulic-Chucks.jpg",
         brand: "MST Japan",
         shortDescription: "High-precision hydraulic chucks for vibration-free machining",
         description: "Hydraulic chucks use oil pressure to provide uniform clamping force around the entire tool shank, resulting in excellent runout accuracy and vibration damping.",
@@ -506,7 +506,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Chucks",
         slug: "milling-chucks",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "/images/products/milling_chuck.png",
         shortDescription: "Heavy-duty milling chucks for maximum gripping force",
         description: "Milling chucks provide exceptional gripping force for heavy-duty milling operations. The mechanical clamping system ensures secure tool holding under high cutting loads.",
         specifications: [
@@ -1034,7 +1034,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Micro Boring Heads",
         slug: "micro-boring-heads",
-        image: "/images/products/placeholder-micro-boring.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/MST-boring-head-orion-group.jpeg",
         shortDescription: "Ultra-precision boring heads with adjustable fine boring capability",
         description: "Micro boring heads provide ultra-precision boring capability for finishing internal diameters to exact specifications. Micron-level adjustment allows for precise diameter control.",
         specifications: [
@@ -1085,7 +1085,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Precision Machine Vises",
         slug: "precision-machine-vises",
-        image: "/images/products/placeholder-work-holding.svg",
+        image: "/images/products/precision_machine_vise.png",
         shortDescription: "High-precision machine vises for secure workpiece clamping",
         description: "Precision machine vises provide secure and accurate workpiece clamping for a wide range of machining operations. Available in various sizes and configurations.",
         specifications: [
@@ -1100,7 +1100,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Modular Clamping Systems",
         slug: "modular-clamping-systems",
-        image: "/images/products/placeholder-work-holding.svg",
+        image: "/images/products/modular_clamping_system.png",
         shortDescription: "Flexible modular workholding for versatile setups",
         description: "Modular clamping systems provide maximum flexibility for workholding setups. The interchangeable components allow quick reconfiguration for different workpiece geometries.",
         specifications: [
@@ -1114,7 +1114,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Fixture Plates",
         slug: "fixture-plates",
-        image: "/images/products/placeholder-work-holding.svg",
+        image: "/images/products/fixture_plates.png",
         shortDescription: "Precision fixture plates for repeatable workholding setups",
         description: "Precision fixture plates provide a stable and accurate base for workholding. Grid patterns allow quick and repeatable positioning of clamps and fixtures.",
         specifications: [
@@ -1185,7 +1185,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Magnetic Beds & Lifts",
         slug: "magnetic-beds-and-lifts",
-        image: "/images/products/placeholder-magnetic-beds.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/shinji-magnetic-bed.jpeg",
         shortDescription: "Electromagnetic and permanent magnetic workholding and lifting systems",
         description: "Magnetic beds and lifting systems provide secure, damage-free workholding for grinding and machining operations. Electromagnetic and permanent magnetic options available for different applications.",
         specifications: [
@@ -1305,7 +1305,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Presetters",
         slug: "tool-presetters",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2024/12/Blum-1.jpg",
         shortDescription: "Offline tool measurement and presetting systems",
         description: "Tool presetter systems for offline measurement of tool length, diameter, and other parameters. Reduces machine downtime and improves setup accuracy.",
         specifications: [
@@ -1319,7 +1319,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Length Measuring Systems",
         slug: "tool-length-measuring-systems",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2024/12/Blum-1.jpg",
         shortDescription: "In-machine tool length measurement systems",
         description: "In-machine tool length measuring systems for automatic tool length compensation. Ensures consistent part quality across tool changes.",
         specifications: [
@@ -1333,7 +1333,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Workpiece Probing Systems",
         slug: "workpiece-probing-systems",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2024/04/blumtc50-726x1024.jpg",
         shortDescription: "Automated workpiece probing for setup and inspection",
         description: "Automated workpiece probing systems for part setup, alignment, and in-process inspection. Integrates with CNC controllers for fully automated measurement cycles.",
         specifications: [
@@ -1347,7 +1347,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Tool Storage Systems",
         slug: "tool-storage-systems",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "/images/products/tool_storage_system.png",
         shortDescription: "Organized tool storage and management systems",
         description: "Tool storage and management systems for organized storage of cutting tools, holders, and accessories. Improves workshop efficiency and tool lifecycle management.",
         specifications: [
@@ -1384,7 +1384,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Face Mills",
         slug: "face-mills",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "/images/products/face_mill.png",
         shortDescription: "Indexable face mills for high-efficiency surface milling",
         description: "Indexable face mills designed for high-efficiency surface milling operations. Available in various diameters and insert configurations for different materials and applications.",
         specifications: [
@@ -1400,7 +1400,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Shoulder Mills",
         slug: "shoulder-mills",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "/images/products/shoulder_mill.png",
         shortDescription: "Indexable shoulder mills for 90┬░ shoulder milling",
         description: "Indexable shoulder mills designed for precise 90-degree shoulder milling operations. Excellent for creating step features and shoulder profiles.",
         specifications: [
@@ -1415,7 +1415,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "High Feed Cutters",
         slug: "high-feed-cutters",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/08/aurapowerhighfeed.jpg",
         shortDescription: "Indexable high feed cutters for rapid roughing",
         description: "Indexable high feed cutters designed for rapid roughing operations with maximum metal removal rates. Small depth of cut with very high feed rates.",
         specifications: [
@@ -1430,7 +1430,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Copy Mills",
         slug: "copy-mills",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "/images/products/copy_mill.png",
         shortDescription: "Indexable copy mills for 3D contouring and profiling",
         description: "Indexable copy mills designed for 3D contouring and profiling operations. Available in various radii for different surface finish requirements.",
         specifications: [
@@ -1483,7 +1483,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "External Turning Holders",
         slug: "external-turning-holders",
-        image: "/images/products/placeholder-turning.svg",
+        image: "/images/products/external_turning_holder.png",
         shortDescription: "Indexable external turning holders for OD turning operations",
         description: "Indexable external turning holders designed for outer diameter turning operations. Available in various shank sizes and insert configurations.",
         specifications: [
@@ -1498,7 +1498,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Internal Boring Bars",
         slug: "internal-boring-bars",
-        image: "/images/products/placeholder-turning.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/Showa-Boring-Bar.jpeg",
         shortDescription: "Precision boring bars for ID boring operations",
         description: "Precision boring bars for internal diameter boring operations. Available in steel and carbide variants for different depth-to-diameter ratios.",
         specifications: [
@@ -1513,7 +1513,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Grooving Tools",
         slug: "grooving-tools",
-        image: "/images/products/placeholder-turning.svg",
+        image: "/images/products/grooving_tool.png",
         shortDescription: "Indexable grooving tools for internal and external grooving",
         description: "Indexable grooving tools for both internal and external groove cutting operations. Various widths and configurations available.",
         specifications: [
@@ -1528,7 +1528,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Threading Tools",
         slug: "threading-tools",
-        image: "/images/products/placeholder-turning.svg",
+        image: "/images/products/threading_tool.png",
         shortDescription: "Indexable threading tools for external and internal threading",
         description: "Indexable threading tools for producing precise internal and external threads. Available for various thread forms and pitches.",
         specifications: [
@@ -1543,7 +1543,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Parting-Off Tools",
         slug: "parting-off-tools",
-        image: "/images/products/placeholder-turning.svg",
+        image: "/images/products/parting_off_tool.png",
         shortDescription: "Indexable parting-off tools for cut-off operations",
         description: "Indexable parting-off tools designed for efficient cut-off operations. Rigid construction ensures clean, accurate cuts.",
         specifications: [
@@ -1558,7 +1558,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Turning Inserts",
         slug: "turning-inserts",
-        image: "/images/products/placeholder-turning.svg",
+        image: "/images/products/turning_inserts.png",
         shortDescription: "Wide range of turning inserts for all materials and operations",
         description: "Comprehensive range of turning inserts in various carbide grades, geometries, and coatings for different materials and machining conditions.",
         specifications: [
@@ -1626,7 +1626,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Drilling Inserts",
         slug: "drilling-inserts",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "/images/products/turning_inserts.png",
         shortDescription: "Indexable drilling inserts for efficient hole making",
         description: "Indexable drilling inserts for efficient hole making operations. Available in various sizes and grades for different materials.",
         specifications: [
@@ -1641,7 +1641,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Grooving Inserts",
         slug: "grooving-inserts",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "/images/products/turning_inserts.png",
         shortDescription: "Precision grooving inserts for internal and external grooves",
         description: "Precision grooving inserts for creating internal and external grooves, recesses, and undercuts.",
         specifications: [
@@ -1656,7 +1656,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Threading Inserts",
         slug: "threading-inserts",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "/images/products/turning_inserts.png",
         shortDescription: "Precision threading inserts for various thread forms",
         description: "Precision threading inserts for producing internal and external threads in various thread forms and pitches.",
         specifications: [
@@ -1692,7 +1692,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "ER Collets",
         slug: "er-collets",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "/images/products/er_collet_chuck.png",
         shortDescription: "Precision ER collets for versatile tool clamping",
         description: "Precision ER collets provide accurate tool clamping in ER collet chuck systems. Available in various sizes for different tool shank diameters.",
         specifications: [
@@ -1707,7 +1707,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Pull Studs / Retention Knobs",
         slug: "pull-studs-retention-knobs",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "/images/products/cat_tool_holder.png",
         shortDescription: "Precision pull studs for automatic tool changer systems",
         description: "Precision pull studs and retention knobs for automatic tool changer (ATC) systems. Ensure reliable tool clamping and release in machining centers.",
         specifications: [
@@ -1721,7 +1721,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Collet Chucks",
         slug: "collet-chucks-accessories",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "/images/products/er_collet_chuck.png",
         shortDescription: "Collet chuck assemblies for various taper types",
         description: "Complete collet chuck assemblies including chuck body, nut, and spanner for various machine taper types.",
         specifications: [
@@ -1735,7 +1735,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Setup Accessories",
         slug: "setup-accessories",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "/images/products/modular_clamping_system.png",
         shortDescription: "Essential accessories for efficient machine setup",
         description: "Essential setup accessories including torque wrenches, collet spanners, cleaning supplies, and measurement tools for efficient machine setup.",
         specifications: [

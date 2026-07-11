@@ -86,7 +86,7 @@ export default function Header() {
               <span className="text-sm sm:text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)]">
                 {company.name}
               </span>
-              <span className="font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line hidden sm:block">
+              <span className="font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line block">
                 {company.shortTagline}
               </span>
             </div>

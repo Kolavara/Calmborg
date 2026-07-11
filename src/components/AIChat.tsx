@@ -200,12 +200,12 @@ export default function AIChat() {
         {isOpen ? (
           <>
             <X size={16} />
-            <span className="hidden sm:inline">Close</span>
+            <span className="hidden sm:inline whitespace-nowrap">Close</span>
           </>
         ) : (
           <>
             <Bot size={18} className="text-[var(--accent)]" />
-            <span className="hidden sm:inline">AI Assistant</span>
+            <span className="hidden sm:inline whitespace-nowrap">AI Assistant</span>
             <Sparkles size={14} className="text-yellow-400" />
           </>
         )}

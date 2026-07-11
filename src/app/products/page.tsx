@@ -32,10 +32,17 @@ export default function ProductsPage() {
       cat.products.some((p) =>
         p.toLowerCase().includes(searchQuery.toLowerCase())
       );
+    
+    // @ts-ignore
+    const matchesMainCategory = activeMainCategory === "All" || cat.mainCategory === activeMainCategory;
     const matchesCategory =
       activeCategory === null || cat.id === activeCategory;
-    return matchesSearch && matchesCategory;
+    return matchesSearch && matchesMainCategory && matchesCategory;
   });
+  
+  // @ts-ignore
+  const visibleSubCategories = activeMainCategory === "All" ? productCategories : productCategories.filter(cat => cat.mainCategory === activeMainCategory);
+  const mainCategories = ["All", "Cutting Tools", "Tool Holders", "Work Holding System", "Accessories", "Measuring Touch Probes"];
 
   return (
     <div className="relative">
@@ -83,42 +90,54 @@ export default function ProductsPage() {
                 />
               </div>
 
-              {/* Category Filter Grouped */}
-              <div className="flex flex-col gap-6">
-                <div>
+              {/* Main Category Tabs */}
+              <div className="flex flex-wrap gap-2 pb-4 border-b border-[var(--border-shadow)]/30">
+                {mainCategories.map((mainCat) => (
                   <button
-                    onClick={() => setActiveCategory(null)}
-                    className={`rounded-lg px-6 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
-                      activeCategory === null
-                        ? "bg-accent text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
-                        : "bg-muted text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
+                    key={mainCat}
+                    onClick={() => {
+                      setActiveMainCategory(mainCat);
+                      setActiveCategory(null);
+                    }}
+                    className={`rounded-lg px-5 py-3 font-sans text-sm font-bold tracking-wide transition-all ${
+                      activeMainCategory === mainCat
+                        ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
+                        : "bg-[var(--background)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
                     }`}
                   >
-                    All Products
+                    {mainCat}
                   </button>
-                </div>
-                
-                {["Cutting Tools", "Tool Holders", "Work Holding System", "Accessories", "Measuring Touch Probes"].map(mainCat => (
-                  <div key={mainCat} className="flex flex-col gap-3">
-                    <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-[var(--foreground)] opacity-80 pl-1 border-l-2 border-accent">
-                      {mainCat}
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {productCategories.filter(c => c.mainCategory === mainCat).map((cat) => (
-                        <button
-                          key={cat.id}
-                          onClick={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
-                          className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
-                            activeCategory === cat.id
-                              ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
-                              : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
-                          }`}
-                        >
-                          {cat.title}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                ))}
+              </div>
+
+              {/* Sub Category Filter */}
+              <div className="flex flex-wrap gap-2 pt-2">
+                <button
+                  onClick={() => setActiveCategory(null)}
+                  className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
+                    activeCategory === null
+                      ? "bg-[var(--dark-surface)] text-white shadow-[2px_2px_6px_rgba(0,0,0,0.3)]"
+                      : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
+                  }`}
+                >
+                  All {activeMainCategory !== "All" ? activeMainCategory : "Products"}
+                </button>
+                {visibleSubCategories.map((cat) => (
+                  <button
+                    key={cat.id}
+                    onClick={() =>
+                      setActiveCategory(
+                        activeCategory === cat.id ? null : cat.id
+                      )
+                    }
+                    className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
+                      activeCategory === cat.id
+                        ? "bg-[var(--dark-surface)] text-white shadow-[2px_2px_6px_rgba(0,0,0,0.3)]"
+                        : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
+                    }`}
+                  >
+                    {cat.title}
+                  </button>
                 ))}
               </div>
             </div>

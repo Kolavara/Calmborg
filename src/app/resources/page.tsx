@@ -44,7 +44,7 @@ export default function ResourcesPage() {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--muted)] px-4 py-2 shadow-[var(--shadow-card)]">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--text-muted)]">
+              <span className="font-mono text-[13px] uppercase tracking-widest text-[var(--text-muted)]">
                 Technical Resources
               </span>
             </div>
@@ -69,7 +69,7 @@ export default function ResourcesPage() {
                 <button
                   key={type}
                   onClick={() => setFilter(type)}
-                  className={`rounded-xl px-5 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
+                  className={`rounded-xl px-5 py-2.5 font-mono text-[13px] font-bold uppercase tracking-wider transition-all ${
                     filter === type
                       ? "bg-[var(--accent)] text-white shadow-[3px_3px_8px_rgba(255,71,87,0.3)]"
                       : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
@@ -106,7 +106,7 @@ export default function ResourcesPage() {
                         className="text-[var(--accent)] transition-transform duration-300 group-hover:scale-110"
                       />
                     </div>
-                    <span className="rounded-full bg-[var(--muted)] px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                    <span className="rounded-full bg-[var(--muted)] px-3 py-1 font-mono text-[12px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
                       {resource.type}
                     </span>
                   </div>
@@ -166,7 +166,7 @@ export default function ResourcesPage() {
             <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 
             <div className="mb-8 text-center">
-              <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
+              <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
                 Quick Reference
               </span>
               <h2 className="text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">
@@ -178,7 +178,7 @@ export default function ResourcesPage() {
             <div className="mx-auto max-w-2xl">
               <div className="grid gap-4 sm:grid-cols-3">
                 <div>
-                  <label className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                  <label className="mb-2 block font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                     Material
                   </label>
                   <select className="w-full rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none">
@@ -191,7 +191,7 @@ export default function ResourcesPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                  <label className="mb-2 block font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                     Operation
                   </label>
                   <select className="w-full rounded-xl bg-background px-4 py-3.5 font-mono text-sm text-foreground shadow-[var(--shadow-recessed)] focus:shadow-[var(--shadow-recessed),0_0_0_2px_var(--accent)] focus:outline-none">
@@ -202,7 +202,7 @@ export default function ResourcesPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="mb-2 block font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                  <label className="mb-2 block font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                     Tool Diameter
                   </label>
                   <input
@@ -218,7 +218,7 @@ export default function ResourcesPage() {
                   <div className="font-mono text-lg font-bold text-[var(--accent)]">
                     250
                   </div>
-                  <div className="font-mono text-[9px] uppercase tracking-wider text-gray-400">
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-gray-400">
                     RPM
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export default function ResourcesPage() {
                   <div className="font-mono text-lg font-bold text-[var(--accent)]">
                     0.15
                   </div>
-                  <div className="font-mono text-[9px] uppercase tracking-wider text-gray-400">
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-gray-400">
                     Feed/Tooth
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function ResourcesPage() {
                   <div className="font-mono text-lg font-bold text-[var(--accent)]">
                     118
                   </div>
-                  <div className="font-mono text-[9px] uppercase tracking-wider text-gray-400">
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-gray-400">
                     mm/min
                   </div>
                 </div>
@@ -242,13 +242,13 @@ export default function ResourcesPage() {
                   <div className="font-mono text-lg font-bold text-green-500">
                     Optimal
                   </div>
-                  <div className="font-mono text-[9px] uppercase tracking-wider text-gray-400">
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-gray-400">
                     Status
                   </div>
                 </div>
               </div>
 
-              <p className="mt-4 text-center text-xs text-[var(--text-muted)]">
+              <p className="mt-4 text-center text-[13px] text-[var(--text-muted)]">
                 * These are general guidelines. Contact our team for
                 application-specific recommendations.
               </p>

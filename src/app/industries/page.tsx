@@ -39,7 +39,7 @@ export default function IndustriesPage() {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--muted)] px-4 py-2 shadow-[var(--shadow-card)]">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--text-muted)]">
+              <span className="font-mono text-[13px] uppercase tracking-widest text-[var(--text-muted)]">
                 Industries We Serve
               </span>
             </div>
@@ -102,7 +102,7 @@ export default function IndustriesPage() {
 
                     {/* Applications Grid */}
                     <div className={`${isEven ? "" : "md:[direction:ltr]"}`}>
-                      <h4 className="mb-4 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                      <h4 className="mb-4 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                         Key Applications
                       </h4>
                       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
@@ -115,7 +115,7 @@ export default function IndustriesPage() {
                               size={12}
                               className="shrink-0 text-[var(--accent)]"
                             />
-                            <span className="text-xs font-medium text-[var(--foreground)]">
+                            <span className="text-[13px] font-medium text-[var(--foreground)]">
                               {app}
                             </span>
                           </div>
@@ -148,7 +148,7 @@ export default function IndustriesPage() {
                       className="flex items-center gap-2 rounded-xl bg-white/5 px-4 py-3"
                     >
                       <Icon size={16} className="text-[var(--accent)]" />
-                      <span className="text-xs font-medium text-gray-300">
+                      <span className="text-[13px] font-medium text-gray-300">
                         {ind.title}
                       </span>
                     </div>
@@ -201,7 +201,7 @@ export default function IndustriesPage() {
               <div className="rounded-xl bg-[var(--dark-bg)] p-6 shadow-[var(--shadow-card)] carbon-fiber relative overflow-hidden">
                 <div className="absolute inset-0 scanlines opacity-20" />
                 <div className="relative space-y-4">
-                  <h3 className="mb-2 font-mono text-xs uppercase tracking-widest text-white/60">
+                  <h3 className="mb-2 font-mono text-[13px] uppercase tracking-widest text-white/60">
                     Contact Info
                   </h3>
                   <a

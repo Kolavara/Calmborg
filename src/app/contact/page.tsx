@@ -52,7 +52,7 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--muted)] px-4 py-2 shadow-[var(--shadow-card)]">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--text-muted)]">
+              <span className="font-mono text-[13px] uppercase tracking-widest text-[var(--text-muted)]">
                 Contact Us
               </span>
             </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                     <Icon size={20} className="text-white" />
                   </div>
                   <div>
-                    <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--text-muted)]">
+                    <div className="font-mono text-[12px] uppercase tracking-widest text-[var(--text-muted)]">
                       {item.label}
                     </div>
                     <div className="text-sm font-bold text-[var(--foreground)]">
@@ -144,7 +144,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-extrabold text-[var(--foreground)]">
                     Request for Quote (RFQ)
                   </h2>
-                  <p className="mt-1 font-mono text-xs uppercase tracking-wider text-[var(--accent)]">
+                  <p className="mt-1 font-mono text-[13px] uppercase tracking-wider text-[var(--accent)]">
                     Fill in your requirements below
                   </p>
                 </div>
@@ -188,7 +188,7 @@ export default function ContactPage() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     {/* Personal Info */}
                     <div>
-                      <h4 className="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                      <h4 className="mb-3 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                         Contact Information
                       </h4>
                       <div className="grid gap-4 sm:grid-cols-2">
@@ -232,7 +232,7 @@ export default function ContactPage() {
 
                     {/* Product Requirements */}
                     <div>
-                      <h4 className="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                      <h4 className="mb-3 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                         Product Requirements
                       </h4>
                       <div className="grid gap-4 sm:grid-cols-2">
@@ -282,7 +282,7 @@ export default function ContactPage() {
 
                     {/* Additional Details */}
                     <div>
-                      <h4 className="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                      <h4 className="mb-3 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                         Additional Details
                       </h4>
                       <textarea
@@ -304,7 +304,7 @@ export default function ContactPage() {
                         <Send size={16} />
                         Submit RFQ
                       </button>
-                      <span className="text-xs text-[var(--text-muted)]">
+                      <span className="text-[13px] text-[var(--text-muted)]">
                         We typically respond within 24 hours
                       </span>
                     </div>
@@ -321,7 +321,7 @@ export default function ContactPage() {
                 <div className="relative space-y-5">
                   <div className="flex items-center gap-3">
                     <div className="led led-green" />
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-green-400">
+                    <span className="font-mono text-[12px] uppercase tracking-widest text-green-400">
                       Office Location
                     </span>
                   </div>
@@ -334,7 +334,7 @@ export default function ContactPage() {
                       <h4 className="mb-1 text-sm font-bold text-white">
                         {company.name} Office
                       </h4>
-                      <p className="text-xs leading-relaxed text-gray-400">
+                      <p className="text-[13px] leading-relaxed text-gray-400">
                         {company.address}
                       </p>
                     </div>

@@ -52,7 +52,7 @@ export default function ProductsPage() {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--muted)] px-4 py-2 shadow-[var(--shadow-card)]">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--text-muted)]">
+              <span className="font-mono text-[13px] uppercase tracking-widest text-[var(--text-muted)]">
                 Product Catalogue
               </span>
             </div>
@@ -96,7 +96,7 @@ export default function ProductsPage() {
                   {activeCategory && (
                     <button
                       onClick={() => setActiveCategory(null)}
-                      className="text-xs font-bold text-[var(--accent)] hover:underline uppercase tracking-wider"
+                      className="text-[13px] font-bold text-[var(--accent)] hover:underline uppercase tracking-wider"
                     >
                       Clear Filter
                     </button>
@@ -106,7 +106,7 @@ export default function ProductsPage() {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-8">
                   {mainCategories.filter(cat => cat !== "All").map(mainCat => (
                     <div key={mainCat} className="flex flex-col gap-3">
-                      <h4 className="font-sans text-[13px] font-bold uppercase tracking-widest text-[var(--foreground)] pb-2 border-b border-[var(--border-shadow)]/20">
+                      <h4 className="font-sans text-[15px] font-bold uppercase tracking-widest text-[var(--foreground)] pb-2 border-b border-[var(--border-shadow)]/20">
                         {mainCat}
                       </h4>
                       <ul className="flex flex-col gap-2">
@@ -196,7 +196,7 @@ export default function ProductsPage() {
               <div className="rounded-xl bg-[var(--dark-bg)] p-6 shadow-[var(--shadow-card)] carbon-fiber relative overflow-hidden">
                 <div className="absolute inset-0 scanlines opacity-20" />
                 <div className="relative space-y-4">
-                  <h3 className="mb-2 font-mono text-xs uppercase tracking-widest text-white/60">
+                  <h3 className="mb-2 font-mono text-[13px] uppercase tracking-widest text-white/60">
                     Contact Info
                   </h3>
                   <a
@@ -243,7 +243,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
       {/* Brand Badge */}
       {category.brand && (
         <div className="absolute right-6 top-6 z-10 rounded-lg bg-[var(--dark-bg)] px-3 py-1.5 shadow-[2px_2px_6px_rgba(0,0,0,0.2)]">
-          <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-white">
+          <span className="font-mono text-[12px] font-bold uppercase tracking-wider text-white">
             {category.brand}
           </span>
         </div>
@@ -278,7 +278,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                 <h3 className="text-xl font-extrabold text-[var(--foreground)]">
                   {category.title}
                 </h3>
-                <p className="font-mono text-xs uppercase tracking-wider text-[var(--accent)] truncate">
+                <p className="font-mono text-[13px] uppercase tracking-wider text-[var(--accent)] truncate">
                   {category.subtitle}
                 </p>
               </div>
@@ -290,7 +290,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
 
             {/* Products Grid with Images */}
             <div className="mb-4">
-              <h4 className="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+              <h4 className="mb-3 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                 Products
               </h4>
               {category.productItems && category.productItems.length > 0 ? (
@@ -304,7 +304,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                       {/* Brand label */}
                       {item.brand && (
                         <div className="absolute left-2 top-2 z-10 rounded bg-[var(--dark-bg)]/80 px-2 py-0.5 backdrop-blur-sm">
-                          <span className="font-mono text-[9px] font-bold uppercase tracking-wider text-white/90">
+                          <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-white/90">
                             {item.brand}
                           </span>
                         </div>
@@ -333,11 +333,11 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                       )}
                       {/* Product Info */}
                       <div className="p-3">
-                        <h5 className="text-xs font-bold text-[var(--foreground)] leading-tight group-hover:text-[var(--accent)] transition-colors">
+                        <h5 className="text-sm font-bold text-[var(--foreground)] leading-tight group-hover:text-[var(--accent)] transition-colors">
                           {item.name}
                         </h5>
                         {item.shortDescription && (
-                          <p className="mt-1 text-[10px] text-[var(--text-muted)] leading-snug line-clamp-2">
+                          <p className="mt-1 text-sm text-[var(--text-muted)] leading-snug line-clamp-2">
                             {item.shortDescription}
                           </p>
                         )}
@@ -353,7 +353,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                       className="flex items-center gap-2 rounded-lg bg-[var(--muted)] px-3 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]"
                     >
                       <Check size={12} className="shrink-0 text-[var(--accent)]" />
-                      <span className="text-xs font-medium text-[var(--foreground)]">
+                      <span className="text-[13px] font-medium text-[var(--foreground)]">
                         {product}
                       </span>
                     </div>
@@ -367,7 +367,7 @@ function CategoryCard({ category }: { category: ProductCategory }) {
               <div className="mt-4">
                 <button
                   onClick={() => setExpanded(!expanded)}
-                  className="flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider text-[var(--accent)] transition-colors hover:text-[var(--accent-dark)]"
+                  className="flex items-center gap-2 font-mono text-[13px] font-bold uppercase tracking-wider text-[var(--accent)] transition-colors hover:text-[var(--accent-dark)]"
                 >
                   <Filter size={12} />
                   {expanded ? "Hide" : "Show"} Details
@@ -385,14 +385,14 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                   <div className="grid gap-4 sm:grid-cols-3">
                     {category.applications && (
                       <div>
-                        <h5 className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                        <h5 className="mb-2 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                           Applications
                         </h5>
                         <div className="flex flex-wrap gap-1.5">
                           {category.applications.map((a) => (
                             <span
                               key={a}
-                              className="rounded-md bg-[var(--muted)] px-2 py-1 font-mono text-[10px] text-[var(--text-muted)]"
+                              className="rounded-md bg-[var(--muted)] px-2 py-1 font-mono text-[12px] text-[var(--text-muted)]"
                             >
                               {a}
                             </span>
@@ -402,14 +402,14 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                     )}
                     {category.benefits && (
                       <div>
-                        <h5 className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                        <h5 className="mb-2 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                           Benefits
                         </h5>
                         <div className="flex flex-wrap gap-1.5">
                           {category.benefits.map((b) => (
                             <span
                               key={b}
-                              className="rounded-md bg-green-50 px-2 py-1 font-mono text-[10px] text-green-700"
+                              className="rounded-md bg-green-50 px-2 py-1 font-mono text-[12px] text-green-700"
                             >
                               {b}
                             </span>
@@ -419,14 +419,14 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                     )}
                     {category.materials && (
                       <div>
-                        <h5 className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                        <h5 className="mb-2 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                           Materials
                         </h5>
                         <div className="flex flex-wrap gap-1.5">
                           {category.materials.map((m) => (
                             <span
                               key={m}
-                              className="rounded-md bg-blue-50 px-2 py-1 font-mono text-[10px] text-blue-700"
+                              className="rounded-md bg-blue-50 px-2 py-1 font-mono text-[12px] text-blue-700"
                             >
                               {m}
                             </span>

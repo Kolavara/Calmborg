@@ -92,7 +92,7 @@ function AnimatedStat({
       <div className="mb-1 text-sm font-bold uppercase tracking-wider text-[var(--foreground)]">
         {label}
       </div>
-      <div className="text-xs text-[var(--dark-text-muted)]">{description}</div>
+      <div className="text-[13px] text-[var(--dark-text-muted)]">{description}</div>
     </div>
   );
 }
@@ -158,7 +158,7 @@ export default function Home() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 rounded-full bg-[var(--muted)] px-4 py-2 shadow-[var(--shadow-card)]">
                 <div className="led led-green animate-pulse-glow" />
-                <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--text-muted)]">
+                <span className="font-mono text-[13px] uppercase tracking-widest text-[var(--text-muted)]">
                   Trusted by 200+ manufacturers across India
                 </span>
               </div>
@@ -214,7 +214,7 @@ export default function Home() {
               </div>
 
               {/* Trust Indicators */}
-              <div className="flex flex-wrap items-center gap-6 text-xs text-[var(--text-muted)]">
+              <div className="flex flex-wrap items-center gap-6 text-[13px] text-[var(--text-muted)]">
                 <div className="flex items-center gap-2">
                   <Award size={14} className="text-[var(--accent)]" />
                   <span className="font-mono uppercase tracking-wider">
@@ -261,18 +261,18 @@ export default function Home() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <div className="led led-green" />
-                          <span className="font-mono text-[10px] uppercase tracking-widest text-green-400">
+                          <span className="font-mono text-[12px] uppercase tracking-widest text-green-400">
                             Online
                           </span>
                         </div>
-                        <span className="font-mono text-[10px] text-gray-500">
+                        <span className="font-mono text-[12px] text-gray-500">
                           SYS v3.0
                         </span>
                       </div>
 
                       {/* Dashboard Panel */}
                       <div className="rounded-lg bg-white/5 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
-                        <div className="mb-3 font-mono text-[10px] uppercase tracking-widest text-gray-400">
+                        <div className="mb-3 font-mono text-[12px] uppercase tracking-widest text-gray-400">
                           Tool Inventory Status
                         </div>
                         <div className="space-y-2">
@@ -284,10 +284,10 @@ export default function Home() {
                           ].map((item) => (
                             <div key={item.label}>
                               <div className="mb-1 flex justify-between">
-                                <span className="font-mono text-[10px] text-gray-300">
+                                <span className="font-mono text-[12px] text-gray-300">
                                   {item.label}
                                 </span>
-                                <span className="font-mono text-[10px] text-white">
+                                <span className="font-mono text-[12px] text-white">
                                   {item.pct}%
                                 </span>
                               </div>
@@ -343,7 +343,7 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <Star size={14} className="text-white" />
                     <div>
-                      <div className="font-mono text-xs font-bold text-white">
+                      <div className="font-mono text-[13px] font-bold text-white">
                         30+ Years
                       </div>
                       <div className="font-mono text-[8px] uppercase tracking-wider text-white/70">
@@ -386,7 +386,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="mb-12 text-center">
-            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
+            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
               Why Calm Borg
             </span>
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">
@@ -437,7 +437,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="mb-12 text-center">
-            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
+            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
               Our Products
             </span>
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">
@@ -482,13 +482,13 @@ export default function Home() {
                   {cat.products.slice(0, 4).map((p) => (
                     <span
                       key={p}
-                      className="rounded-md bg-[var(--muted)] px-2 py-1 font-mono text-[10px] text-[var(--text-muted)]"
+                      className="rounded-md bg-[var(--muted)] px-2 py-1 font-mono text-[12px] text-[var(--text-muted)]"
                     >
                       {p}
                     </span>
                   ))}
                   {cat.products.length > 4 && (
-                    <span className="rounded-md bg-[var(--accent)]/10 px-2 py-1 font-mono text-[10px] text-[var(--accent)]">
+                    <span className="rounded-md bg-[var(--accent)]/10 px-2 py-1 font-mono text-[12px] text-[var(--accent)]">
                       +{cat.products.length - 4} more
                     </span>
                   )}
@@ -520,7 +520,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="mb-12 text-center">
-            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
+            <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
               Industries We Serve
             </span>
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">
@@ -598,7 +598,7 @@ export default function Home() {
               <div className="rounded-xl bg-[var(--dark-bg)] p-6 shadow-[var(--shadow-card)] carbon-fiber relative overflow-hidden">
                 <div className="absolute inset-0 scanlines opacity-20" />
                 <div className="relative space-y-4">
-                  <h3 className="mb-4 font-mono text-xs uppercase tracking-widest text-white/60">
+                  <h3 className="mb-4 font-mono text-[13px] uppercase tracking-widest text-white/60">
                     Get In Touch
                   </h3>
                   <a

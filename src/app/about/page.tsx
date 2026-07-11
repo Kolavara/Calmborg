@@ -69,7 +69,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--muted)] px-4 py-2 shadow-[var(--shadow-card)]">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--text-muted)]">
+              <span className="font-mono text-[13px] uppercase tracking-widest text-[var(--text-muted)]">
                 About Calm Borg
               </span>
             </div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Left: Story */}
             <div className="space-y-6">
-              <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
+              <span className="mb-3 inline-block rounded-full bg-[var(--muted)] px-4 py-1.5 font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] shadow-[var(--shadow-card)]">
                 Our Story
               </span>
               <h2 className="text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">

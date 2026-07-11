@@ -32,7 +32,7 @@ export default function Header() {
     <>
       {/* Top Info Bar */}
       <div className="relative z-50 bg-[var(--dark-bg)] text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-[13px] sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 sm:gap-6">
             <a
               href={`tel:${company.phone}`}
@@ -52,14 +52,14 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3">
             <div className="led led-green animate-pulse-glow" />
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--dark-text-muted)]">
+            <span className="font-mono text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
               System Operational
             </span>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 rounded-full bg-[#25D366] px-3 py-1 text-xs font-semibold text-white transition-all hover:bg-[#128C7E] hover:shadow-[0_0_12px_rgba(37,211,102,0.5)]"
+              className="flex items-center gap-1.5 rounded-full bg-[#25D366] px-3 py-1 text-[13px] font-semibold text-white transition-all hover:bg-[#128C7E] hover:shadow-[0_0_12px_rgba(37,211,102,0.5)]"
             >
               <MessageCircle size={12} />
               <span className="hidden sm:inline">WhatsApp</span>
@@ -87,7 +87,7 @@ export default function Header() {
               <span className="text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)]">
                 {company.name}
               </span>
-              <span className="font-mono text-xs uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line">
+              <span className="font-mono text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line">
                 {company.shortTagline}
               </span>
             </div>

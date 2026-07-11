@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white">{company.name}</h3>
-                  <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--dark-text-muted)]">
+                  <p className="font-mono text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
                     Est. 2026
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="mb-6 font-mono text-xs font-bold uppercase tracking-widest text-white">
+              <h4 className="mb-6 font-mono text-[13px] font-bold uppercase tracking-widest text-white">
                 Navigation
               </h4>
               <ul className="space-y-3">
@@ -105,7 +105,7 @@ export default function Footer() {
 
             {/* Product Links */}
             <div>
-              <h4 className="mb-6 font-mono text-xs font-bold uppercase tracking-widest text-white">
+              <h4 className="mb-6 font-mono text-[13px] font-bold uppercase tracking-widest text-white">
                 Products
               </h4>
               <ul className="space-y-3">
@@ -128,7 +128,7 @@ export default function Footer() {
 
             {/* Resources & CTA */}
             <div>
-              <h4 className="mb-6 font-mono text-xs font-bold uppercase tracking-widest text-white">
+              <h4 className="mb-6 font-mono text-[13px] font-bold uppercase tracking-widest text-white">
                 Resources
               </h4>
               <ul className="space-y-3 mb-8">
@@ -164,16 +164,16 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
-            <p className="text-xs text-[var(--dark-text-muted)]">
+            <p className="text-[13px] text-[var(--dark-text-muted)]">
               &copy; {currentYear} {company.name}. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               <div className="led led-green animate-pulse-glow" />
-              <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--dark-text-muted)]">
+              <span className="font-mono text-[12px] uppercase tracking-widest text-[var(--dark-text-muted)]">
                 All Systems Operational
               </span>
             </div>
-            <p className="font-mono text-[10px] text-[var(--dark-text-muted)]">
+            <p className="font-mono text-[12px] text-[var(--dark-text-muted)]">
               GST: {company.gst}
             </p>
           </div>

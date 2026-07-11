@@ -82,7 +82,7 @@ export default function ProductDetailPage({
       {/* ═══════════════ BREADCRUMB ═══════════════ */}
       <section className="py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 font-mono text-xs text-[var(--text-muted)]">
+          <nav className="flex items-center gap-2 font-mono text-[13px] text-[var(--text-muted)]">
             <Link href="/" className="hover:text-[var(--accent)] transition-colors">
               Home
             </Link>
@@ -112,7 +112,7 @@ export default function ProductDetailPage({
               <ProductImage product={product} />
               {product.brand && (
                 <div className="absolute right-4 top-4 rounded-lg bg-[var(--dark-bg)] px-3 py-1.5">
-                  <span className="font-mono text-xs font-bold uppercase tracking-wider text-white">
+                  <span className="font-mono text-[13px] font-bold uppercase tracking-wider text-white">
                     {product.brand}
                   </span>
                 </div>
@@ -122,7 +122,7 @@ export default function ProductDetailPage({
             {/* Right: Product Info */}
             <div className="space-y-6">
               <div>
-                <span className="mb-2 inline-block rounded-full bg-[var(--muted)] px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                <span className="mb-2 inline-block rounded-full bg-[var(--muted)] px-3 py-1 font-mono text-[12px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
                   {category.title}
                 </span>
                 <h1 className="text-3xl font-extrabold tracking-tight text-[var(--foreground)] md:text-4xl">
@@ -196,7 +196,7 @@ export default function ProductDetailPage({
                 {/* Features */}
                 {product.features && product.features.length > 0 && (
                   <div className="mt-6">
-                    <h3 className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                    <h3 className="mb-3 font-mono text-[13px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
                       Key Features
                     </h3>
                     <ul className="space-y-2">
@@ -220,14 +220,14 @@ export default function ProductDetailPage({
                   <div className="relative">
                     <div className="mb-4 flex items-center gap-2">
                       <Settings size={18} className="text-[var(--accent)]" />
-                      <h3 className="font-mono text-xs font-bold uppercase tracking-wider text-white">
+                      <h3 className="font-mono text-[13px] font-bold uppercase tracking-wider text-white">
                         Specifications
                       </h3>
                     </div>
                     <div className="space-y-3">
                       {product.specifications.map((spec) => (
                         <div key={spec.label} className="flex items-center justify-between border-b border-white/10 pb-2">
-                          <span className="font-mono text-[10px] uppercase tracking-wider text-gray-400">
+                          <span className="font-mono text-[12px] uppercase tracking-wider text-gray-400">
                             {spec.label}
                           </span>
                           <span className="text-sm font-bold text-white">
@@ -244,7 +244,7 @@ export default function ProductDetailPage({
                   <div className="mt-4 rounded-2xl bg-[var(--background)] p-6 shadow-[var(--shadow-card)]">
                     <div className="mb-3 flex items-center gap-2">
                       <Tag size={14} className="text-[var(--accent)]" />
-                      <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                      <h4 className="font-mono text-[13px] font-bold uppercase tracking-wider text-[var(--text-muted)]">
                         Suitable Materials
                       </h4>
                     </div>
@@ -252,7 +252,7 @@ export default function ProductDetailPage({
                       {product.materials.map((material) => (
                         <span
                           key={material}
-                          className="rounded-md bg-[var(--muted)] px-2 py-1 font-mono text-[10px] text-[var(--text-muted)]"
+                          className="rounded-md bg-[var(--muted)] px-2 py-1 font-mono text-[12px] text-[var(--text-muted)]"
                         >
                           {material}
                         </span>
@@ -320,7 +320,7 @@ export default function ProductDetailPage({
                     {related.name}
                   </h3>
                   {related.shortDescription && (
-                    <p className="mt-1 text-xs text-[var(--text-muted)] line-clamp-2">
+                    <p className="mt-1 text-[13px] text-[var(--text-muted)] line-clamp-2">
                       {related.shortDescription}
                     </p>
                   )}

@@ -86,8 +86,12 @@ export default function Header() {
               <span className="text-sm sm:text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)]">
                 {company.name}
               </span>
-              <span className="font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] whitespace-pre-line block">
-                {company.shortTagline}
+              <span className="font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] block leading-tight">
+                {company.shortTagline.split('\n').map((line, i) => (
+                  <span key={i} className="whitespace-nowrap">
+                    {i > 0 && <br />}{line}
+                  </span>
+                ))}
               </span>
             </div>
           </Link>

@@ -1850,6 +1850,7 @@ export const industries: Industry[] = [
   { id: "precision", title: "Precision Engineering", description: "Micron-level accuracy for instrumentation and optical components.", icon: "Target", applications: ["Gauge Components", "Optical Parts", "Watch Mechanisms", "Sensor Housings", "Encoder Parts"] },
   { id: "electronics", title: "Electronics Manufacturing", description: "Miniature components for semiconductor equipment and connectors.", icon: "Cpu", applications: ["Heat Sinks", "Connectors", "PCB Drills", "Enclosures", "Semiconductor Tooling"] },
   { id: "general", title: "General Engineering", description: "Versatile tooling for job shops and contract manufacturers.", icon: "Wrench", applications: ["Shafts & Bushings", "Flanges & Fittings", "Custom Parts", "Prototype Work", "Repair & Maintenance"] },
+  { id: "semiconductor", title: "Semiconductor", description: "High-precision components and tooling for wafer fabrication and semiconductor manufacturing.", icon: "Cpu", applications: ["Wafer Carriers", "Cleanroom Components", "Vacuum Chambers", "Precision Positioning Stages"] },
 ];
 
 // ============================================================

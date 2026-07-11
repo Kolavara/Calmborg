@@ -530,24 +530,27 @@ export default function Home() {
 
           {/* Industries Grid */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {industries.map((ind) => {
+            {industries.map((ind, index) => {
               const Icon = iconMap[ind.icon] || Wrench;
+              const isOrphan = index === 8;
+              
               return (
-                <Link
-                  key={ind.id}
-                  href={`/industries#${ind.id}`}
-                  className="group flex flex-col items-center rounded-2xl bg-[var(--background)] p-6 text-center shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-floating)]"
-                >
-                  <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--muted)] shadow-[var(--shadow-card)] transition-all duration-300 group-hover:bg-[var(--accent)] group-hover:shadow-[var(--shadow-glow)]">
-                    <Icon
-                      size={22}
-                      className="text-[var(--text-muted)] transition-colors group-hover:text-white"
-                    />
-                  </div>
-                  <h3 className="text-sm font-bold text-[var(--foreground)]">
-                    {ind.title}
-                  </h3>
-                </Link>
+                <div key={ind.id} className={isOrphan ? "col-span-2 flex justify-center sm:col-span-1 sm:block lg:col-span-4 lg:flex lg:justify-center" : "h-full"}>
+                  <Link
+                    href={`/industries#${ind.id}`}
+                    className={`group flex h-full flex-col items-center rounded-2xl bg-[var(--background)] p-6 text-center shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-floating)] ${isOrphan ? "w-full sm:max-w-none lg:max-w-[280px]" : "w-full"}`}
+                  >
+                    <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--muted)] shadow-[var(--shadow-card)] transition-all duration-300 group-hover:bg-[var(--accent)] group-hover:shadow-[var(--shadow-glow)]">
+                      <Icon
+                        size={22}
+                        className="text-[var(--text-muted)] transition-colors group-hover:text-white"
+                      />
+                    </div>
+                    <h3 className="text-sm font-bold text-[var(--foreground)]">
+                      {ind.title}
+                    </h3>
+                  </Link>
+                </div>
               );
             })}
           </div>

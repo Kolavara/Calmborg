@@ -78,7 +78,7 @@ export default function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 sm:gap-6 group">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3.5 group">
             <div className="flex h-12 w-12 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-white border-2 border-[var(--dark-bg)] shadow-[4px_4px_12px_rgba(0,0,0,0.2),-2px_-2px_8px_rgba(255,255,255,0.08)] transition-all duration-300 group-hover:shadow-[6px_6px_16px_rgba(0,0,0,0.25),-3px_-3px_10px_rgba(255,255,255,0.1)] p-1">
               <img src="/logo.png" alt="Calm Borg Logo" className="h-full w-full object-contain" />
             </div>
@@ -93,7 +93,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-3 lg:flex lg:ml-12 xl:ml-20">
+          <nav className="hidden items-center gap-3 lg:flex lg:ml-8">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (

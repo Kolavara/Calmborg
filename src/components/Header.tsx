@@ -78,15 +78,15 @@ export default function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3.5 group">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3.5 group shrink-0">
             <div className="flex h-12 w-12 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-white border-2 border-[var(--dark-bg)] shadow-[4px_4px_12px_rgba(0,0,0,0.2),-2px_-2px_8px_rgba(255,255,255,0.08)] transition-all duration-300 group-hover:shadow-[6px_6px_16px_rgba(0,0,0,0.25),-3px_-3px_10px_rgba(255,255,255,0.1)] p-1">
               <img src="/logo.png" alt="Calm Borg Logo" className="h-full w-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className="text-sm sm:text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)]">
+              <span className="text-sm sm:text-2xl font-extrabold leading-tight tracking-tight text-[var(--foreground)] whitespace-nowrap">
                 {company.name}
               </span>
-              <span className="font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] block leading-tight">
+              <span className="hidden sm:block font-mono text-[10px] sm:text-[13px] uppercase tracking-[0.15em] text-[var(--text-muted)] leading-tight mt-0.5">
                 {company.shortTagline.split('\n').map((line, i) => (
                   <span key={i} className="whitespace-nowrap">
                     {i > 0 && <br />}{line}
@@ -97,16 +97,16 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-3 lg:flex lg:ml-8">
+          <nav className="hidden items-center gap-1 lg:flex lg:ml-auto lg:mr-6">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative whitespace-nowrap rounded-lg px-5 py-3 text-base font-semibold transition-all duration-200 ${
+                  className={`relative whitespace-nowrap rounded-lg px-4 py-2 text-sm xl:text-base font-semibold transition-all duration-200 ${
                     isActive
-                      ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3),-2px_-2px_6px_rgba(255,100,110,0.3)]"
+                      ? "text-[var(--accent)] bg-[var(--muted)] shadow-[var(--shadow-pressed)]"
                       : "text-[var(--text-muted)] hover:bg-[var(--muted)] hover:text-[var(--foreground)] hover:shadow-[var(--shadow-card)]"
                   }`}
                 >

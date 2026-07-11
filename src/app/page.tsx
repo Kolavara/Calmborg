@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   company,
@@ -36,35 +36,30 @@ import { ArrowRight,
   Star,
   CircleDot } from "lucide-react";
 
-/* ─── Animated Counter ─── */
+/* ─── Animated Counter (triggers on page load) ─── */
 function AnimatedStat({
   value,
   label,
   description,
+  delay = 0,
 }: {
   value: string;
   label: string;
   description: string;
+  delay?: number;
 }) {
-  const [visible, setVisible] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const [started, setStarted] = useState(false);
   const numericPart = parseInt(value.replace(/[^0-9]/g, ""));
   const suffix = value.replace(/[0-9]/g, "");
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setVisible(true);
-      },
-      { threshold: 0.3 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+    const timer = setTimeout(() => setStarted(true), delay);
+    return () => clearTimeout(timer);
+  }, [delay]);
 
   useEffect(() => {
-    if (!visible) return;
+    if (!started) return;
     let start = 0;
     const end = numericPart;
     const duration = 1500;
@@ -79,10 +74,10 @@ function AnimatedStat({
       }
     }, 16);
     return () => clearInterval(timer);
-  }, [visible, numericPart]);
+  }, [started, numericPart]);
 
   return (
-    <div ref={ref} className="text-center">
+    <div className="text-center">
       <div className="mb-2 font-mono text-4xl font-bold text-[var(--accent)] md:text-5xl">
         {count}
         {suffix}
@@ -91,6 +86,67 @@ function AnimatedStat({
         {label}
       </div>
       <div className="text-[13px] text-[var(--dark-text-muted)]">{description}</div>
+    </div>
+  );
+}
+
+/* ─── Animated Progress Bar ─── */
+function AnimatedProgressBar({
+  label,
+  pct,
+  color,
+  delay = 0,
+}: {
+  label: string;
+  pct: number;
+  color: string;
+  delay?: number;
+}) {
+  const [started, setStarted] = useState(false);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setStarted(true), delay);
+    return () => clearTimeout(timer);
+  }, [delay]);
+
+  useEffect(() => {
+    if (!started) return;
+    const startTime = performance.now();
+    const duration = 1200;
+
+    function animate(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setWidth(eased * pct);
+      if (progress < 1) requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+  }, [started, pct]);
+
+  return (
+    <div>
+      <div className="mb-1 flex justify-between">
+        <span className="font-mono text-[12px] text-gray-300">
+          {label}
+        </span>
+        <span className="font-mono text-[12px] text-white">
+          {Math.round(width)}%
+        </span>
+      </div>
+      <div className="h-1.5 rounded-full bg-white/10">
+        <div
+          className="h-full rounded-full transition-none"
+          style={{
+            width: `${width}%`,
+            backgroundColor: color,
+            boxShadow: width > 0 ? `0 0 8px ${color}80` : 'none',
+          }}
+        />
+      </div>
     </div>
   );
 }
@@ -275,31 +331,18 @@ export default function Home() {
                         </div>
                         <div className="space-y-2">
                           {[
-                            { label: "End Mills", pct: 92, color: "#22c55e" },
-                            { label: "Inserts", pct: 87, color: "#3b82f6" },
-                            { label: "Tool Holders", pct: 78, color: "#f59e0b" },
-                            { label: "Accessories", pct: 95, color: "#22c55e" },
+                            { label: "End Mills", pct: 92, color: "#22c55e", delay: 300 },
+                            { label: "Inserts", pct: 87, color: "#3b82f6", delay: 500 },
+                            { label: "Tool Holders", pct: 78, color: "#f59e0b", delay: 700 },
+                            { label: "Accessories", pct: 95, color: "#22c55e", delay: 900 },
                           ].map((item) => (
-                            <div key={item.label}>
-                              <div className="mb-1 flex justify-between">
-                                <span className="font-mono text-[12px] text-gray-300">
-                                  {item.label}
-                                </span>
-                                <span className="font-mono text-[12px] text-white">
-                                  {item.pct}%
-                                </span>
-                              </div>
-                              <div className="h-1.5 rounded-full bg-white/10">
-                                <div
-                                  className="h-full rounded-full transition-all duration-1000"
-                                  style={{
-                                    width: `${item.pct}%`,
-                                    backgroundColor: item.color,
-                                    boxShadow: `0 0 8px ${item.color}80`,
-                                  }}
-                                />
-                              </div>
-                            </div>
+                            <AnimatedProgressBar
+                              key={item.label}
+                              label={item.label}
+                              pct={item.pct}
+                              color={item.color}
+                              delay={item.delay}
+                            />
                           ))}
                         </div>
                       </div>
@@ -366,12 +409,13 @@ export default function Home() {
             <div className="absolute inset-0 scanlines opacity-20" />
             
             <div className="relative grid grid-cols-2 gap-8 md:grid-cols-4">
-              {stats.map((stat) => (
+              {stats.map((stat, i) => (
                 <AnimatedStat
                   key={stat.label}
                   value={stat.value}
                   label={stat.label}
                   description={stat.description}
+                  delay={i * 200}
                 />
               ))}
             </div>

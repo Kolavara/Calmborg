@@ -629,7 +629,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Ball Nose Inserts",
         slug: "ball-nose-inserts-aura",
-        image: "/images/products/ball_nose_insert.png",
+        image: "/images/products/ball_nose_insert.jpg",
         brand: "Aura Germany",
         shortDescription: "Precision ball nose inserts for smooth 3D surface finishing",
         description: "Ball nose inserts from Aura Germany for achieving smooth, high-quality 3D surface finishes in die and mold applications.",
@@ -1631,7 +1631,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Drilling Inserts",
         slug: "drilling-inserts",
-        image: "/images/products/drilling_insert.png",
+        image: "/images/products/drilling_insert.jpg",
         shortDescription: "Indexable drilling inserts for efficient hole making",
         description: "Indexable drilling inserts for efficient hole making operations. Available in various sizes and grades for different materials.",
         specifications: [
@@ -1712,7 +1712,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Pull Studs / Retention Knobs",
         slug: "pull-studs-retention-knobs",
-        image: "/images/products/pull_stud.png",
+        image: "/images/products/pull_stud.jpg",
         shortDescription: "Precision pull studs for automatic tool changer systems",
         description: "Precision pull studs and retention knobs for automatic tool changer (ATC) systems. Ensure reliable tool clamping and release in machining centers.",
         specifications: [
@@ -1740,7 +1740,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Setup Accessories",
         slug: "setup-accessories",
-        image: "/images/products/setup_accessories.png",
+        image: "/images/products/setup_accessories.jpg",
         shortDescription: "Essential accessories for efficient machine setup",
         description: "Essential setup accessories including torque wrenches, collet spanners, cleaning supplies, and measurement tools for efficient machine setup.",
         specifications: [

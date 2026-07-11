@@ -314,7 +314,7 @@ export default function Home() {
                       {/* Status Bar */}
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <div className="led led-green" />
+                          <div className="led led-green animate-pulse-glow" />
                           <span className="font-mono text-[12px] uppercase tracking-widest text-green-400">
                             Online
                           </span>
@@ -372,7 +372,7 @@ export default function Home() {
 
                   {/* Hardware Details: Power LED + Screw */}
                   <div className="absolute bottom-5 left-4 flex items-center gap-2">
-                    <div className="led led-green" />
+                    <div className="led led-green animate-pulse-glow" />
                     <span className="font-mono text-[8px] uppercase tracking-wider text-gray-500">
                       PWR
                     </span>

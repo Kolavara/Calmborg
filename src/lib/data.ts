@@ -491,7 +491,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Hydraulic Chucks",
         slug: "hydraulic-chucks",
-        image: "/images/products/hydraulic_chuck.png",
+        image: "/images/products/hydraulic_chuck.jpg",
         brand: "MST Japan",
         shortDescription: "High-precision hydraulic chucks for vibration-free machining",
         description: "Hydraulic chucks use oil pressure to provide uniform clamping force around the entire tool shank, resulting in excellent runout accuracy and vibration damping.",
@@ -908,6 +908,7 @@ export const productCategories: ProductCategory[] = [
         name: "Machine Vices",
         slug: "machine-vices-m-n-h-series",
         image: "https://orioninnotech.com/wp-content/uploads/2020/07/Mechanical-Force-multiplier-Machine-Vises-orion-grou.jpg",
+        brand: "Tsudakoma",
         shortDescription: "Precision machine vices in multiple series for different applications",
         description: "High-precision machine vices available in M (Medium), N (Normal), and H (Heavy-duty) series. Designed for secure workpiece clamping with excellent parallelism and repeatability.",
         specifications: [

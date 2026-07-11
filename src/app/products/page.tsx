@@ -240,15 +240,6 @@ function CategoryCard({ category }: { category: ProductCategory }) {
       <div className="absolute left-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
       <div className="absolute right-3 top-3 h-2 w-2 rounded-full bg-[var(--muted)] shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]" />
 
-      {/* Brand Badge */}
-      {category.brand && (
-        <div className="absolute right-6 top-6 z-10 rounded-lg bg-[var(--dark-bg)] px-3 py-1.5 shadow-[2px_2px_6px_rgba(0,0,0,0.2)]">
-          <span className="font-mono text-[12px] font-bold uppercase tracking-wider text-white">
-            {category.brand}
-          </span>
-        </div>
-      )}
-
       <div className="relative">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
           {/* Category Thumbnail */}
@@ -301,14 +292,6 @@ function CategoryCard({ category }: { category: ProductCategory }) {
                       key={item.name}
                       className="group relative overflow-hidden rounded-xl bg-[var(--muted)] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
                     >
-                      {/* Brand label */}
-                      {item.brand && (
-                        <div className="absolute left-2 top-2 z-10 rounded bg-[var(--dark-bg)]/80 px-2 py-0.5 backdrop-blur-sm">
-                          <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-white/90">
-                            {item.brand}
-                          </span>
-                        </div>
-                      )}
                       {/* Product Image */}
                       {item.image ? (
                         <div className="relative h-40 overflow-hidden bg-white">

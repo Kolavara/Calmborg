@@ -83,35 +83,42 @@ export default function ProductsPage() {
                 />
               </div>
 
-              {/* Category Filter */}
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={() => setActiveCategory(null)}
-                  className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
-                    activeCategory === null
-                      ? "bg-accent text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
-                      : "bg-muted text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
-                  }`}
-                >
-                  All
-                </button>
-                {productCategories.map((cat) => (
+              {/* Category Filter Grouped */}
+              <div className="flex flex-col gap-6">
+                <div>
                   <button
-                    key={cat.id}
-                    onClick={() =>
-
-                      setActiveCategory(
-                        activeCategory === cat.id ? null : cat.id
-                      )
-                    }
-                    className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
-                      activeCategory === cat.id
-                        ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
-                        : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
+                    onClick={() => setActiveCategory(null)}
+                    className={`rounded-lg px-6 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
+                      activeCategory === null
+                        ? "bg-accent text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
+                        : "bg-muted text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
                     }`}
                   >
-                    {cat.title}
+                    All Products
                   </button>
+                </div>
+                
+                {["Cutting Tools", "Tool Holders", "Work Holding System", "Accessories", "Measuring Touch Probes"].map(mainCat => (
+                  <div key={mainCat} className="flex flex-col gap-3">
+                    <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-[var(--foreground)] opacity-80 pl-1 border-l-2 border-accent">
+                      {mainCat}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {productCategories.filter(c => c.mainCategory === mainCat).map((cat) => (
+                        <button
+                          key={cat.id}
+                          onClick={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
+                          className={`rounded-lg px-4 py-2.5 font-mono text-xs font-bold uppercase tracking-wider transition-all ${
+                            activeCategory === cat.id
+                              ? "bg-[var(--accent)] text-white shadow-[2px_2px_6px_rgba(255,71,87,0.3)]"
+                              : "bg-[var(--muted)] text-[var(--text-muted)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pressed)]"
+                          }`}
+                        >
+                          {cat.title}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

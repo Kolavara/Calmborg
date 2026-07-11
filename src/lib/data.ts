@@ -429,7 +429,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "CAT Tool Holders",
         slug: "cat-tool-holders",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/08/aurapowerhighfeed.jpg",
         brand: "Showa Japan",
         shortDescription: "CAT taper tool holders for Bridgeport-style and VMC machining centers",
         description: "CAT tool holders provide reliable performance for Bridgeport-style and vertical machining centers. Precision ground for accurate tool positioning and minimal runout.",
@@ -444,7 +444,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "HSK Holders",
         slug: "hsk-holders",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/MSTSmartgrip.jpg",
         brand: "MST Japan",
         shortDescription: "HSK hollow taper shank holders for high-speed machining",
         description: "HSK holders provide double-contact engagement (taper + face) for superior rigidity and accuracy at high speeds. Ideal for modern high-speed machining centers.",
@@ -475,7 +475,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "ER Collet Chucks",
         slug: "er-collet-chucks",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2026/03/VSERIESVOL3.jpg",
         shortDescription: "Universal ER collet chucks for versatile tool clamping",
         description: "Universal ER collet chucks provide flexible tool clamping for a wide range of tool shank diameters. Available in BT, CAT, and HSK taper types.",
         specifications: [
@@ -506,7 +506,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Chucks",
         slug: "milling-chucks",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/08/aurapowerhighfeed.jpg",
         shortDescription: "Heavy-duty milling chucks for maximum gripping force",
         description: "Milling chucks provide exceptional gripping force for heavy-duty milling operations. The mechanical clamping system ensures secure tool holding under high cutting loads.",
         specifications: [
@@ -1052,7 +1052,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Micro Boring Heads",
         slug: "micro-boring-heads",
-        image: "/images/products/placeholder-micro-boring.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/SlimlineUNOMST.jpg",
         shortDescription: "Ultra-precision boring heads with adjustable fine boring capability",
         description: "Micro boring heads provide ultra-precision boring capability for finishing internal diameters to exact specifications. Micron-level adjustment allows for precise diameter control.",
         specifications: [
@@ -1103,7 +1103,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Precision Machine Vises",
         slug: "precision-machine-vises",
-        image: "/images/products/placeholder-work-holding.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2026/03/VSERIESVOL3.jpg",
         shortDescription: "High-precision machine vises for secure workpiece clamping",
         description: "Precision machine vises provide secure and accurate workpiece clamping for a wide range of machining operations. Available in various sizes and configurations.",
         specifications: [
@@ -1402,7 +1402,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Face Mills",
         slug: "face-mills",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2021/10/HGLRS.jpg",
         shortDescription: "Indexable face mills for high-efficiency surface milling",
         description: "Indexable face mills designed for high-efficiency surface milling operations. Available in various diameters and insert configurations for different materials and applications.",
         specifications: [
@@ -1433,7 +1433,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "High Feed Cutters",
         slug: "high-feed-cutters",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2024/04/vuseriesyamawa.jpg",
         shortDescription: "Indexable high feed cutters for rapid roughing",
         description: "Indexable high feed cutters designed for rapid roughing operations with maximum metal removal rates. Small depth of cut with very high feed rates.",
         specifications: [
@@ -1463,7 +1463,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Inserts (Various Grades)",
         slug: "milling-inserts-various-grades",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/08/aurapowerhighfeed.jpg",
         shortDescription: "Wide range of milling inserts for different materials and operations",
         description: "Comprehensive range of milling inserts in various carbide grades and coatings for different materials and machining conditions.",
         specifications: [
@@ -1629,7 +1629,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Inserts (APMT, SEKT, SPKT)",
         slug: "milling-inserts-apmt-sekt",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/08/aurapowerhighfeed.jpg",
         shortDescription: "Premium milling inserts for face, shoulder, and copy milling",
         description: "Premium milling inserts in APMT, SEKT, and SPKT geometries for face milling, shoulder milling, and copy milling operations.",
         specifications: [
@@ -1644,7 +1644,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Drilling Inserts",
         slug: "drilling-inserts",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/Tungstun-Carbide-end-mill-unimax-series-czs-union-tool-orion-group-.jpeg",
         shortDescription: "Indexable drilling inserts for efficient hole making",
         description: "Indexable drilling inserts for efficient hole making operations. Available in various sizes and grades for different materials.",
         specifications: [
@@ -1710,7 +1710,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "ER Collets",
         slug: "er-collets",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2026/03/VSERIESVOL3.jpg",
         shortDescription: "Precision ER collets for versatile tool clamping",
         description: "Precision ER collets provide accurate tool clamping in ER collet chuck systems. Available in various sizes for different tool shank diameters.",
         specifications: [
@@ -1739,7 +1739,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Collet Chucks",
         slug: "collet-chucks-accessories",
-        image: "/images/products/placeholder-cnc-accessories.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/MSTSmartgrip.jpg",
         shortDescription: "Collet chuck assemblies for various taper types",
         description: "Complete collet chuck assemblies including chuck body, nut, and spanner for various machine taper types.",
         specifications: [

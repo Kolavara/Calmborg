@@ -10,6 +10,7 @@ import { Menu,
   Mail,
   MessageCircle,
   ChevronRight } from "lucide-react";
+import AIChat from "@/components/AIChat";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -120,6 +121,9 @@ export default function Header() {
               Get Quote
               <ChevronRight size={14} />
             </Link>
+
+            {/* AI Assistant Button (to the right of Get Quote) */}
+            <AIChat />
 
             {/* Mobile Menu Toggle */}
             <button

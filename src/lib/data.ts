@@ -412,7 +412,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "BT Tool Holders (Showa)",
         slug: "bt-tool-holders-showa",
-        image: "/images/products/placeholder-tool-holder.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/show-tools-holders-orion-group.jpg",
         brand: "Showa Japan",
         shortDescription: "BT taper tool holders from Showa for high precision machining",
         description: "Showa BT tool holders deliver exceptional precision and rigidity for CNC machining centers. Manufactured to exacting standards with precision-ground tapers and accurate tool clamping.",
@@ -1069,7 +1069,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Smartgrip Work Holders (5-Axis)",
         slug: "smartgrip-work-holders",
-        image: "/images/products/placeholder-work-holding.svg",
+        image: "https://orioninnotech.com/wp-content/uploads/2020/07/MSTSmartgrip.jpg",
         brand: "MST Japan",
         shortDescription: "Revolutionary workholding for 5-axis simultaneous machining",
         description: "The Smartgrip system from MST Japan represents a revolutionary approach to workholding for 5-axis machining. Its unique design allows maximum access to workpieces while providing secure clamping.",
@@ -1445,7 +1445,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Inserts (Various Grades)",
         slug: "milling-inserts-various-grades",
-        image: "/images/products/placeholder-indexable-milling.svg",
+        image: "/images/products/milling_inserts.png",
         shortDescription: "Wide range of milling inserts for different materials and operations",
         description: "Comprehensive range of milling inserts in various carbide grades and coatings for different materials and machining conditions.",
         specifications: [
@@ -1596,7 +1596,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Turning Inserts (CNGA, CNMG, TNMG, WNMG)",
         slug: "turning-inserts-cnga-cnmg",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "/images/products/turning_inserts.png",
         shortDescription: "Premium turning inserts for all turning operations",
         description: "Premium turning inserts in CNGA, CNMG, TNMG, and WNMG geometries. Available in multiple carbide grades and coatings for different materials and operations.",
         specifications: [
@@ -1611,7 +1611,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "Milling Inserts (APMT, SEKT, SPKT)",
         slug: "milling-inserts-apmt-sekt",
-        image: "/images/products/placeholder-cutting-inserts.svg",
+        image: "/images/products/milling_inserts.png",
         shortDescription: "Premium milling inserts for face, shoulder, and copy milling",
         description: "Premium milling inserts in APMT, SEKT, and SPKT geometries for face milling, shoulder milling, and copy milling operations.",
         specifications: [

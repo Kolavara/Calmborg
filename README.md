@@ -31,6 +31,7 @@
 - **📱 Responsive Design** - Mobile-first approach with Tailwind CSS
 - **⚡ High Performance** - Built on Next.js for optimized server-side rendering
 - **🎯 Type-Safe** - Full TypeScript support throughout the codebase
+- ai chat bot for easier product selection and guidance.
 
 ---
 
